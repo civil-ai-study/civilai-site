@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIは初めて、で大丈夫。― civilAI（技術士）</title>
+<meta name="description" content="「変なことを入力したら、大変なことになるんじゃないか」——講習会でいちばん多かった不安に、最初にお答えします。AIチャットで間違えても、何も壊れません。">
+<meta property="og:title" content="AIは初めて、で大丈夫。― civilAI（技術士）">
+<meta property="og:description" content="「変なことを入力したら、大変なことになるんじゃないか」——講習会でいちばん多かった不安に、最初にお答えします。AIチャットで間違えても、何も壊れません。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AIは初めて、で大丈夫。― civilAI（技術士）">
+<meta name="twitter:description" content="AIチャットで間違えても、何も壊れません。最初の一歩は、今日の5分から。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- OGP画像・favicon・canonical・構造化データ（※公開ドメイン確定時に og:url / og:image / canonical を絶対URLへ差し替え） -->
+<meta property="og:url" content="hajimete.html">
+<meta property="og:image" content="images/hero_illustration.png">
+<meta name="twitter:image" content="images/hero_illustration.png">
+<link rel="canonical" href="hajimete.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="images/avatar_engineer.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "AI、はじめの一歩｜AIは初めて、で大丈夫。",
+  "url": "hajimete.html",
+  "inLanguage": "ja",
+  "description": "AIは初めての建設技術者へ。AIチャットで間違えても壊れない——今日の5分から、やさしく始める入門。現役の建設部門技術士が案内。",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "civilAI（技術士）",
+    "url": "index.html"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "index.html"},
+      {"@type": "ListItem", "position": 2, "name": "AI、はじめの一歩", "item": "hajimete.html"}
+    ]
+  },
+  "author": {
+    "@type": "Person",
+    "name": "civilAI（技術士）",
+    "jobTitle": "技術士（建設部門）",
+    "knowsAbout": ["建設コンサルタント", "建設DX", "生成AI活用", "土木"],
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "技術士（建設部門）"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "コンクリート診断士"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "1級土木施工管理技士"}
+    ],
+    "award": "国土交通省 地方整備局長表彰"
+  }
+}
+</script>
+</head>
+<body class="page-hajimete">
+
+<!-- ===== ナビ ===== -->
+<div class="top-bar"><div class="wrap"><span>AIは初めて、という建設技術者の方へ。今日の5分から、いっしょに始めましょう。</span></div></div>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a href="index.html" class="brand">
+      <img src="images/avatar_engineer.png" alt="civilAI（技術士）" width="1024" height="1024" class="brand-avatar">
+      <span class="brand-name">civilAI<span class="brand-cred">（技術士）</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="keiei.html" class="hideS">経営者の方へ</a>
+      <a href="genba.html" class="hideS">実務で使う</a>
+      <a href="hajimete.html" class="hideS is-active">AI、はじめの一歩</a>
+      <a href="index.html#contact" class="nav-cta">お問い合わせ</a>
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="navMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-menu" id="navMenu">
+    <a href="keiei.html">経営者の方へ</a>
+    <a href="genba.html">実務で使う</a>
+    <a href="hajimete.html">AI、はじめの一歩</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </div>
+</nav>
+
+
+<div id="top"></div>
+
+<!-- ===== 本体（標準2カラム：ページ全体＝本文左＋サイドバー右） ===== -->
+<div class="sec sec--doc">
+  <div class="wrap">
+    <div class="doc-layout">
+      <div class="doc-main">
+
+        <!-- ページタイトル（本文カラム内・標準ブログ型） -->
+        <header class="hero">
+          <div class="wrap hero-wrap">
+            <div class="hero-text-area">
+              <h1 class="reveal">AIは初めて、で大丈夫。</h1>
+              <p class="sub reveal">「変なことを入力したら、大変なことになるんじゃないか」——講習会でいちばん多かった不安に、最初にお答えします。<strong>AIチャットで間違えても、何も壊れません。</strong></p>
+            </div>
+
+            <div class="hero-illustration-container reveal">
+              <img src="images/ai_collaboration_concept.png" alt="技術士とAIが一緒に仕事をするイメージ" width="1024" height="1024" class="hero-img">
+            </div>
+          </div>
+        </header>
+
+        <!-- モバイル：折りたたみ目次 -->
+        <details class="toc-mobile">
+          <summary>このページの内容</summary>
+          <ul>
+            <li><a href="#veteran">経験こそ、いちばんの武器</a></li>
+            <li><a href="#genba-power">現場力——AIに代われない4つの力</a></li>
+            <li><a href="#wakekata">仕事の分け方は、シンプル</a></li>
+            <li><a href="#proposition">その慎重さは、正しい</a></li>
+            <li><a href="#rule">守るのは、ひとつだけ</a></li>
+            <li><a href="#today">今日の最初の一歩</a></li>
+            <li><a href="#young">若手・デジタル世代の方へ</a></li>
+            <li><a href="#next">できたら、次の一歩へ</a></li>
+          </ul>
+        </details>
+
+        <!-- ===== 2つの入口（ベテラン主／若手従） ===== -->
+        <section class="sec sec--compact" id="hajimete-doors">
+          <div class="sec-head reveal">
+            <div>
+              <h2>まず、あなたに近いのはどちらですか</h2>
+              <p>同じ「はじめて」でも、大切にしたいことは違います。近いほうから読んでみてください。</p>
+            </div>
+          </div>
+          <div class="prop-grid door-grid door-choose reveal" role="list">
+            <a class="prop-card door-card door-card--primary" href="#veteran" role="listitem">
+              <span class="door-eyebrow">中堅・ベテランの方へ</span>
+              <h3>経験こそ、AI時代の<span class="nobr">いちばんの武器</span></h3>
+              <p>40代・50代で「今さら」と感じている方へ。現場を知るあなただからこそ、AIをいちばん活かせます。</p>
+              <span class="door-more" aria-hidden="true">この続きへ →</span>
+            </a>
+            <a class="prop-card door-card" href="#young" role="listitem">
+              <span class="door-eyebrow">若手・デジタル世代の方へ</span>
+              <h3>便利。でも“鵜呑み”<span class="nobr">だけは避ける</span></h3>
+              <p>AIに抵抗のない方へ。だからこそ、経験が浅いうちに身につけたい「確かめる」習慣の話です。</p>
+              <span class="door-more" aria-hidden="true">注意点を見る →</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- ===== ① 経験こそ、いちばんの武器（ベテラン主線） ===== -->
+        <section class="sec" id="veteran">
+          <div class="sec-head reveal">
+            <span class="sec-no">1</span>
+            <div>
+              <h2>あなたは、陳腐化しない。むしろ、<span class="nobr">いちばん強い</span></h2>
+              <p>「AIなんて、自分には関係ない」——そう感じるのは、自然なことです。でも、少しだけ聞いてください。</p>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <p>AIの答えが正しいかどうかを見抜けるのは、<strong>現場を知っている人だけ</strong>です。「この数値はおかしい」「この言い回しは現場では通じない」——そう気づける人がいて、はじめてAIの答えは使いものになります。</p>
+            <p>長年つちかった判断力は、経験の浅い人にはまだ真似できません。その力が、あなたをAI時代の<strong>いちばんの使い手</strong>にします。ITが得意かどうかより、<strong>現場の経験が豊かな人ほど、AIは活きます</strong>。</p>
+          </div>
+        </section>
+
+        <!-- ===== ② 現場力——AIには代われない4つの力 ===== -->
+        <section class="sec" id="genba-power">
+          <div class="sec-head reveal">
+            <span class="sec-no">2</span>
+            <div>
+              <h2>現場力——AIには代われない、<span class="nobr">4つの力</span></h2>
+              <p>私たち人間にしかできない仕事を、4つに整理してみます。</p>
+            </div>
+          </div>
+
+          <div class="prop-grid reveal">
+            <div class="prop-card">
+              <h3>① 判断力</h3>
+              <p>データに表れない土・水・自然の異常を、経験から見抜く力。</p>
+            </div>
+            <div class="prop-card">
+              <h3>② 現場での対話力</h3>
+              <p>発注者の本音をくみ取り、住民・行政と合意をつくる力。</p>
+            </div>
+            <div class="prop-card">
+              <h3>③ 臨機応変の力</h3>
+              <p>雪・雨・出水——その場の状況に合わせて、柔軟に決める力。</p>
+            </div>
+            <div class="prop-card">
+              <h3>④ 地域への理解</h3>
+              <p>その土地に根を張ったからこそ見える、地形・住民・歴史への理解。</p>
+            </div>
+          </div>
+
+          <p class="reveal">これらはAIには代われません。逆に、<strong>下ごしらえのような作業は、AIがまとめて引き受けてくれます</strong>。</p>
+
+          <div class="prop-grid reveal">
+            <div class="prop-card">
+              <h3>AIに任せられる仕事</h3>
+              <p>報告書・図面のたたき台／数量計算書の照査補助／基準書の検索・要約／メール文の校正／写真コメントの下書き。</p>
+            </div>
+            <div class="prop-card">
+              <h3>人にしかできない仕事</h3>
+              <p>上の「4つの現場力」すべて。そして最後に「これでいい」と決める判断。</p>
+            </div>
+          </div>
+
+          <p class="reveal">AIは仕事を奪う相手ではありません。<strong>あなたの経験を活かして、あなたを強くする道具</strong>です。現場を知る私たちこそ、AI時代の主役です。</p>
+        </section>
+
+        <!-- ===== ③ 仕事の分け方は、シンプル ===== -->
+        <section class="sec" id="wakekata">
+          <div class="sec-head reveal">
+            <span class="sec-no">3</span>
+            <div>
+              <h2>仕事の分け方は、シンプルです</h2>
+              <p>むずかしい話ではありません。役割を、こう分けるだけです。</p>
+            </div>
+          </div>
+
+          <div class="prop-grid reveal">
+            <div class="prop-card">
+              <span class="door-eyebrow">0 → 10　あなた</span>
+              <h3>起案（方針を決める）</h3>
+              <p>何をすべきか、どんな方針でいくかを決める。ここは人の仕事です。</p>
+            </div>
+            <div class="prop-card">
+              <span class="door-eyebrow">10 → 90　AI</span>
+              <h3>整形・調べ物・下書き</h3>
+              <p>手を動かす作業を、まとめて任せる。AIがいちばん得意なところです。</p>
+            </div>
+            <div class="prop-card">
+              <span class="door-eyebrow">90 → 100　あなた</span>
+              <h3>最終判断・確認</h3>
+              <p>この品質でいいかを決める。ここも、人にしかできない仕事です。</p>
+            </div>
+          </div>
+
+          <p class="reveal">AIは「指示待ちの部下」のようなもの。方向を示すあなたがいて、はじめて力を発揮します。<strong>後輩を育てるのと同じ感覚</strong>で使えます。頼み方のコツは「4つの足し算」だけです（→<a href="genba.html#art-tanomikata">AIへの頼み方（記事07）</a><span class="soon-inline">（note準備中）</span>）。</p>
+        </section>
+
+        <!-- ===== ④ その慎重さは、技術者として正しい（共通の基本） ===== -->
+        <section class="sec" id="proposition">
+          <div class="sec-head reveal">
+            <span class="sec-no">4</span>
+            <div>
+              <h2>その慎重さは、技術者として正しい</h2>
+              <p>ここからは、はじめての方に共通の基本です。</p>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <p>私たちが普段使う構造計算ソフトやCADでは、誤った入力は誤った成果につながります。数値を一桁間違えれば、設計が変わってしまう。だから「入力は慎重に」が体に染みついている——それは技術者として正しい感覚です。</p>
+            <p>その慎重さのまま、AIチャットにも身構えてしまう。でも、AIチャットは「計算ソフト」ではありません。<strong>正反対の道具</strong>です。</p>
+          </div>
+
+          <div class="table-scroll reveal">
+            <table class="taihi-table">
+              <thead><tr><th></th><th>構造計算ソフト</th><th>AIチャット</th></tr></thead>
+              <tbody>
+                <tr><td>入力を間違えると</td><td data-label="構造計算ソフト">誤った計算結果になる</td><td data-label="AIチャット"><strong>変な答えが返るだけ</strong>。読み捨てればおしまい</td></tr>
+                <tr><td>求められる入力</td><td data-label="構造計算ソフト">正確な数値・条件が必須</td><td data-label="AIチャット">誤字・話し言葉でOK。文脈で汲み取ってくれる</td></tr>
+                <tr><td>やり直し</td><td data-label="構造計算ソフト">手戻りが大きい</td><td data-label="AIチャット">何度でも、その場で言い直せる</td></tr>
+                <tr><td>送信ボタンの意味</td><td data-label="構造計算ソフト">「実行」（結果に責任が生じる）</td><td data-label="AIチャット"><strong>「会話のひと言」</strong>。実行ではありません</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="reveal">入力ミスで起こる最悪の事態は、<strong>「変な答えが返ってくる」こと、それだけ</strong>です。設計も、データも、会社のシステムも、何一つ壊れません。</p>
+
+          <p class="reveal">完璧な文章も要りません。「あしたの打ち合わせの議事ろく、まとめて」と誤字のまま打っても、AIは「議事録ですね」と汲み取ってくれます。言い間違えたら、言い直すだけ。気に入らなければ「もう一回」と言うだけです。</p>
+        </section>
+
+        <!-- ===== ⑤ 守るのは、ひとつだけ ===== -->
+        <section class="sec" id="rule">
+          <div class="sec-head reveal">
+            <span class="sec-no">5</span>
+            <div>
+              <h2>守るのは、ひとつだけ</h2>
+            </div>
+          </div>
+
+          <div class="panel panel--gate reveal">
+            <div class="panel-text-content">
+              <p class="panel-body">機密を入れないこと。<strong>発注者名・現場の住所・個人情報・契約金額</strong>の4つは入力しない（伏字やダミーに置き換える）。守るルールは、本当にこれひとつだけです。</p>
+              <p class="panel-body">逆に言えば、機密さえ入れなければ、<strong>「やってはいけない入力」はありません</strong>。</p>
+              <p class="panel-note">※会社としてのルールづくりは、慣れてきてからで大丈夫です（→記事：社内ルールのひな形<span class="soon-inline">（note準備中）</span>）。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== ⑥ 今日の最初の一歩——仕事を忘れて、雑談から ===== -->
+        <section class="sec" id="today">
+          <div class="sec-head reveal">
+            <span class="sec-no">6</span>
+            <div>
+              <h2>今日の最初の一歩——まずは<span class="nobr">雑談から</span></h2>
+              <p>いきなり業務で使うのは、緊張しますよね。だから最初は、仕事の成果を出すためではなく、<strong>「話しかけたら、ちゃんと答えが返ってきた」という小さな驚きを体験するため</strong>の5分です。</p>
+            </div>
+          </div>
+
+          <p class="reveal">下の文をどれか1つ、そのままコピーして貼りつけて送るだけ。</p>
+
+          <div class="copy-grid reveal">
+            <div class="copy-card">
+              <span class="copy-label">今晩の献立</span>
+              <p>「<span class="copy-text">冷蔵庫に豚肉・じゃがいも・玉ねぎがあります。今晩の夕食メニューを3つ提案してください。</span>」</p>
+              <button type="button" class="btn btn-ghost btn-sm copy-btn">コピー</button>
+            </div>
+            <div class="copy-card">
+              <span class="copy-label">週末のおでかけ</span>
+              <p>「<span class="copy-text">お住まいの県で、家族で日帰りで楽しめる場所を3つ教えてください。</span>」（※「お住まいの県」を自分の県名に変えてみてください）</p>
+              <button type="button" class="btn btn-ghost btn-sm copy-btn">コピー</button>
+            </div>
+            <div class="copy-card">
+              <span class="copy-label">ちょっとした疑問</span>
+              <p>「<span class="copy-text">中学生にもわかるように、なぜ空は青いのかを説明してください。</span>」</p>
+              <button type="button" class="btn btn-ghost btn-sm copy-btn">コピー</button>
+            </div>
+            <div class="copy-card">
+              <span class="copy-label">趣味・家庭菜園</span>
+              <p>「<span class="copy-text">初心者でも育てやすい春の野菜を5つ、理由つきで教えてください。</span>」</p>
+              <button type="button" class="btn btn-ghost btn-sm copy-btn">コピー</button>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <ol>
+              <li>スマートフォンに無料でも使えるAIアプリ（GeminiまたはChatGPTなど、どれでも構いません）を入れて開く（迷ったら→<a href="genba.html#art-choice">はじめてのAI、どれを選ぶ？</a>）</li>
+              <li>上の文を1つコピーして貼り、送信ボタンを押す</li>
+              <li>答えが返ってきたら、「もっと簡単に」「あと2つ」と続けて話しかけてみる</li>
+            </ol>
+            <p>答えが返ってきたら、<strong>それで今日は合格です</strong>。「こんなに簡単なんだ」——その実感がすべての出発点です。</p>
+          </div>
+
+          <p class="reveal">慣れてきたら、次は仕事でひとつ。打合せの走り書きメモを貼りつけて「正式な議事録に整えて」と頼むだけで、30分の清書が5分になります（→<a href="https://note.com/civilai/n/n67f9bfb74646" target="_blank" rel="noopener">議事録の作り方（記事21）</a>）。ただしAIは、固有名詞や決めていないことを、もっともらしく書くことがあります。<strong>決定事項・数値・固有名詞だけは、自分の目で確かめる</strong>。その確認が、あなたにしかできない仕事です。</p>
+        </section>
+
+        <!-- ===== 若手・デジタル世代の方へ（サブ・番号なし） ===== -->
+        <section class="sec" id="young">
+          <div class="sec-head reveal">
+            <div>
+              <h2>若手・デジタル世代の方へ——便利。でも“鵜呑み”は<span class="nobr">避ける</span></h2>
+            </div>
+          </div>
+
+          <div class="panel panel--gate reveal">
+            <div class="panel-text-content">
+              <p class="panel-body">スマホもアプリも当たり前の世代にとって、AIは自然な道具でしょう。だからこそ、気をつけたいことが一つあります。</p>
+              <p class="panel-body">AIは、<strong>もっともらしい嘘（ハルシネーション）</strong>を、平然と混ぜてきます。条文番号・数値・固有名詞を、それらしく作ってしまうことがあります。経験が浅いうちは、この「うそ」を見抜きにくい——これは能力ではなく、経験の量の問題です。</p>
+              <p class="panel-body">だから、<strong>大事な数字・基準・固有名詞は、元の資料で確かめる</strong>。この一手間で、まちがいを大きく減らせます。確かめ方は、たった3つです。</p>
+              <p class="panel-note">→ くわしく：<a href="genba.html#art-tashikamekata">AIの答えの確かめ方（記事08）</a><span class="soon-inline">（note準備中）</span>。基本の使い方は、上の④〜⑥の流れがそのまま役に立ちます。</p>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <p>もう一つ、大切なことがあります。<strong>AIを使っても、仕事の進め方そのものは、今まで通りです。</strong>むしろ、経験が浅いうちほど、人と人との相談を大事にしてください。AIは速く下書きを作りますが、その中身が発注の意図や現場の実態に合っているかは、相談のなかで見えてきます。</p>
+          </div>
+
+          <div class="prop-grid reveal">
+            <div class="prop-card">
+              <h3>着手前に、方針を相談する</h3>
+              <p>「何を、どう進めるか」の方針は、AIではなく上司・先輩と打ち合わせて決める。向きが定まってから、手を動かす作業をAIに任せます。</p>
+            </div>
+            <div class="prop-card">
+              <h3>こまめに、途中経過を共有する</h3>
+              <p>AIで下書きが速くできるぶん、方向のズレも早めに直したいもの。社内でこまめに打ち合わせ、進む向きを確かめながら進めます。</p>
+            </div>
+            <div class="prop-card">
+              <h3>人とのやり取りは、人が担う</h3>
+              <p>発注者の意図をくみ取る、住民や行政と話す——ここはAIに任せず、自分で向き合う。信頼は、人と人の間に積み上がります。</p>
+            </div>
+          </div>
+
+          <p class="reveal">やり方の基本は、AIが来ても変わりません。<strong>何を目指すか、この品質でよいかを決めるのは、いつも人</strong>です。相談とこまめな打ち合わせを大事にする人ほど、AIをうまく使いこなせます。</p>
+        </section>
+
+        <!-- ===== できたら、次の一歩へ（番号なし・締め） ===== -->
+        <section class="sec" id="next">
+          <div class="sec-head reveal">
+            <div>
+              <h2>できたら、次の一歩へ</h2>
+              <p>最初の一歩をふめたら、<strong>もう「使っていない人」ではありません</strong>。次はこの順番でどうぞ。</p>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <ol>
+              <li><strong>AIの答え、どこまで信じていい？</strong>（確かめ方は3つだけ）→ <a href="genba.html#art-tashikamekata">記事08へ</a><span class="soon-inline">（note準備中）</span></li>
+              <li><strong>会社で使うならルールを紙1枚</strong>（コピペで使えるひな形）→ <a href="keiei.html#art-rules">記事04へ</a><span class="soon-inline">（note準備中）</span></li>
+              <li><strong>うちみたいな会社でも？</strong>（地方・中小の事例集）→ <a href="keiei.html#art-cases">記事14へ</a><span class="soon-inline">（note準備中）</span></li>
+            </ol>
+            <p>AIは、特別な人だけのものではありません。話しかけるだけで、誰でも使えます。<strong>最初の一歩は、今日の5分から。</strong></p>
+          </div>
+        </section>
+
+      </div><!-- /.doc-main -->
+
+      <!-- ===== サイドバー（右・やさしい案内。末尾の目次だけがstickyで追従＝定番） ===== -->
+      <aside class="sidebar" aria-label="補助情報">
+        <div class="side-card side-profile">
+          <img src="images/avatar_engineer.png" alt="civilAI（技術士）" width="1024" height="1024" loading="lazy" class="sp-avatar">
+          <p class="sp-name">civilAI（技術士）</p>
+          <p class="sp-bio">建設コンサルタントの仕事を30年以上、現場の管理も経験してきた技術者です。むずかしい言葉を使わずに、AIの最初の一歩をご案内します。</p>
+          <a href="index.html#about" class="sp-link">プロフィールの詳細 →</a>
+        </div>
+        <div class="side-card side-nav">
+          <p class="side-title">慣れてきたら</p>
+          <ul>
+            <li><a href="index.html#michisuji">導入の道筋（6ステップ）</a></li>
+            <li><a href="genba.html">実務で使う（手順・比較）</a></li>
+            <li><a href="keiei.html">経営者の方へ（費用・判断）</a></li>
+            <li><a href="index.html#top">トップページ</a></li>
+          </ul>
+        </div>
+        <div class="side-card side-cta">
+          <p class="side-title">わからないことは</p>
+          <p>「これって大丈夫？」という素朴な疑問も歓迎です。お気軽にどうぞ。</p>
+          <a href="index.html#contact" class="btn btn-primary btn-sm">お問い合わせ</a>
+        </div>
+        <div class="side-card side-toc">
+          <p class="side-title">このページの内容</p>
+          <ul>
+            <li><a href="#veteran" class="toc-link">1. 経験こそ、いちばんの武器</a></li>
+            <li><a href="#genba-power" class="toc-link">2. 現場力——4つの力</a></li>
+            <li><a href="#wakekata" class="toc-link">3. 仕事の分け方は、シンプル</a></li>
+            <li><a href="#proposition" class="toc-link">4. その慎重さは、正しい</a></li>
+            <li><a href="#rule" class="toc-link">5. 守るのは、ひとつだけ</a></li>
+            <li><a href="#today" class="toc-link">6. 今日の最初の一歩</a></li>
+            <li><a href="#young" class="toc-link">若手・デジタル世代の方へ</a></li>
+            <li><a href="#next" class="toc-link">できたら、次の一歩へ</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div><!-- /.doc-layout -->
+  </div>
+</div>
+
+<!-- ===== フッター（SNSはフッターに集約＝標準配置） ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="pledge">建設業務のAI導入は、無理なく小さく始められます。</span>
+        現役の建設部門技術士が運営しています。
+      </div>
+      <div class="foot-social" aria-label="SNS（準備中）">
+        <span class="foot-social-label">フォロー：</span>
+        <!-- 公開時に href を実アカウントへ差し替えてください -->
+        <a class="foot-social-link is-disabled" title="note（準備中）" aria-label="noteをフォロー（準備中）">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+            <path d="M12 20h9M3 20v-8a2 2 0 0 1 2-2h4l2 3h4a2 2 0 0 1 2 2v5"/>
+          </svg>
+        </a>
+        <a class="foot-social-link is-disabled" title="X（準備中）" aria-label="Xをフォロー（準備中）">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false">
+            <line x1="5" y1="5" x2="19" y2="19"/>
+            <line x1="19" y1="5" x2="5" y2="19"/>
+          </svg>
+        </a>
+        <a class="foot-social-link is-disabled" title="Facebook（準備中）" aria-label="Facebookをフォロー（準備中）">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      ※本サイトの情報は作成時点のものです。料金・仕様・上限は各社が随時変更します。ご利用・ご契約の前に、公式情報で最新内容をご確認ください。<br>
+      © civilAI（技術士）
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

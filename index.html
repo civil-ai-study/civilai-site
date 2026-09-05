@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>建設業務のAI導入は、まず月3000円程度で十分｜civilAI（技術士）</title>
+<meta name="description" content="「建設特化の生成AI」「設計図書を検索できる専用AI」の導入契約をご検討の前に。現役の建設部門技術士が、月3000円程度のAIチャットで足りるかを先に確かめる導入の道筋を実務視点で整理。">
+<meta property="og:title" content="建設業務のAI導入は、まず月3000円程度で十分｜civilAI（技術士）">
+<meta property="og:description" content="「建設特化の生成AI」「設計図書を検索できる専用AI」の導入契約をご検討の前に。現役の建設部門技術士が、月3000円程度のAIチャットで足りるかを先に確かめる導入の道筋を実務視点で整理。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="建設業務のAI導入は、まず月3000円程度で十分｜civilAI（技術士）">
+<meta name="twitter:description" content="現役の建設部門技術士が、月3000円程度のAIチャットで足りるかを先に確かめる導入の道筋を実務視点で整理。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- OGP画像・favicon・canonical・構造化データ（※公開ドメイン確定時に og:url / og:image / canonical を絶対URLへ差し替え） -->
+<meta property="og:url" content="index.html">
+<meta property="og:image" content="images/hero_illustration.png">
+<meta name="twitter:image" content="images/hero_illustration.png">
+<link rel="canonical" href="index.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="images/avatar_engineer.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "civilAI（技術士）",
+  "url": "index.html",
+  "inLanguage": "ja",
+  "description": "建設・建設コンサルの生成AI導入を、まず月3000円程度のAIチャットで確かめる。現役の建設部門技術士が実務目線で判断材料を整理。",
+  "publisher": {
+    "@type": "Organization",
+    "name": "civilAI（技術士）",
+    "description": "建設業・建設コンサルタント向けに、生成AIの実務活用を解説する情報サイト。"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "civilAI（技術士）",
+    "jobTitle": "技術士（建設部門）",
+    "knowsAbout": ["建設コンサルタント", "建設DX", "生成AI活用", "土木"],
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "技術士（建設部門）"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "コンクリート診断士"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "1級土木施工管理技士"}
+    ],
+    "award": "国土交通省 地方整備局長表彰"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- ===== ナビ（3ドア構造・全ページ共通） ===== -->
+<div class="top-bar"><div class="wrap"><span>数百万円の専用AIを契約する前に——現役の建設部門技術士が、建設AIの実態と判断基準を実務目線で整理しています。</span></div></div>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a href="#top" class="brand">
+      <img src="images/avatar_engineer.png" alt="civilAI（技術士）" width="1024" height="1024" class="brand-avatar">
+      <span class="brand-name">civilAI<span class="brand-cred">（技術士）</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="keiei.html" class="hideS">経営者の方へ</a>
+      <a href="genba.html" class="hideS">実務で使う</a>
+      <a href="hajimete.html" class="hideS">AI、はじめの一歩</a>
+      <a href="#contact" class="nav-cta">お問い合わせ</a>
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="navMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-menu" id="navMenu">
+    <a href="keiei.html">経営者の方へ</a>
+    <a href="genba.html">実務で使う</a>
+    <a href="hajimete.html">AI、はじめの一歩</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </div>
+</nav>
+
+
+<div id="top"></div>
+
+<!-- ===== 本体（標準2カラム：ページ全体＝本文左＋サイドバー右） ===== -->
+<div class="sec sec--doc">
+  <div class="wrap">
+    <div class="doc-layout">
+      <div class="doc-main">
+
+        <!-- ページタイトル（本文カラム内・標準ブログ型） -->
+        <header class="hero">
+          <div class="wrap hero-wrap">
+            <div class="hero-text-area">
+              <h1 class="reveal">建設業務のAI導入は、まず<span class="em">月3000円程度のAIチャット</span>で十分です。</h1>
+              <p class="sub reveal">「AIなんて、うちにはまだ早い」——そう感じている建設・建設コンサルの会社こそ、<strong>今日から始められます</strong>。数百万円の専用システムを契約する前に、まず月3000円程度のAIチャット（ChatGPT・Gemini・Claude など。無料でも試せます）で、自社の仕事に本当に役立つかを自分の手で確かめる。その進め方を、実際に社内でAIを使い込んできた技術士がご案内します。</p>
+              <p class="hero-trust reveal">建設コンサルタント30年以上の現役技術士（建設部門）｜国土交通省 地方整備局長表彰・学会論文発表あり｜身近なAIで社内の“専用AI”を自作した実務者</p>
+            </div>
+
+            <div class="hero-illustration-container reveal">
+              <img src="images/hero_illustration.png" alt="建設実務でのAI活用イメージ" width="1024" height="1024" class="hero-img">
+            </div>
+          </div>
+        </header>
+
+        <!-- ===== 3つの入口カード（対象者別分岐） ===== -->
+        <section class="sec sec--compact" id="doors">
+          <div class="sec-head reveal">
+            <div>
+              <h2>あなたはどれ？　立場でわかる、<span class="nobr">3つの入口</span></h2>
+              <p>立場が違えば、知りたいことも違います。3つの中から近いものを選んでください。</p>
+            </div>
+          </div>
+          <div class="prop-grid door-grid reveal" role="list">
+            <a class="prop-card door-card" href="keiei.html" role="listitem">
+              <span class="door-eyebrow">経営者・決裁者の方へ</span>
+              <h3>いくらかかるか、何を任せられるかを知りたい</h3>
+              <p>専用AIの費用相場と、月3000円程度で始めるときの判断材料。導入是非の考え方を整理します。</p>
+              <span class="door-more" aria-hidden="true">経営者の方へ →</span>
+            </a>
+            <a class="prop-card door-card" href="genba.html" role="listitem">
+              <span class="door-eyebrow">担当技術者の方へ</span>
+              <h3>今日の仕事ひとつ、AIに任せてみたい</h3>
+              <p>議事録・照査・報告書の下書き——30秒で合うツールを選び、手順記事へ。</p>
+              <span class="door-more" aria-hidden="true">実務で使う →</span>
+            </a>
+            <a class="prop-card door-card" href="hajimete.html" role="listitem">
+              <span class="door-eyebrow">AIは初めての方へ</span>
+              <h3>アプリの入れ方から、順に始めたい</h3>
+              <p>入れ方から一つずつご案内します。予備知識はいりません。</p>
+              <span class="door-more" aria-hidden="true">AI、はじめの一歩 →</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- モバイル：全体像の折りたたみ目次 -->
+        <details class="toc-mobile">
+          <summary>このページの内容</summary>
+          <ul>
+            <li><a href="#doors">まず、あなたに合った入口</a></li>
+            <li><a href="#mlit-move">国の動き（今、始める理由）</a></li>
+            <li><a href="#michisuji">導入の道筋（6ステップ）</a></li>
+            <li><a href="#hooks">まずは、この6本から</a></li>
+            <li><a href="#about">運営者について</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="#news">お知らせ</a></li>
+          </ul>
+        </details>
+
+        <!-- ===== 国の動き（3行ブロック）＝今、始める理由 ===== -->
+        <section class="sec sec--compact" id="mlit-move">
+          <div class="sec-head reveal">
+            <div>
+              <h2>国の動き——今、始める理由</h2>
+            </div>
+          </div>
+          <div class="panel reveal">
+            <div class="panel-text-content">
+              <p class="panel-body"><strong>発注者が、「AIを使ってほしい」と言い始めました。</strong> 国交省は2026年度から、直轄の建設コンサルタント業務で、特記仕様書に「生成AIの積極的な利活用を推進する」と明記する方針です。ねらいは省力化だけでなく、技術者が本質的な検討に注力し、成果物の品質を上げること。「使っていいのか」は、もう問いではありません（2026年4月報道）。</p>
+              <p class="panel-body">→ <a href="keiei.html#art-mlit">受託業務で使っていい？ 国交省の方針を読む（note01）</a></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 導入の道筋（6ステップ）＝サイトの背骨（共通の地図） ===== -->
+        <section class="sec" id="michisuji">
+          <div class="sec-head reveal">
+            <div>
+              <h2>建設関係の生成AI導入、<span class="nobr">正しい道筋は</span><span class="nobr">6つのステップです</span></h2>
+              <p>大手ベンダーの高い専用AIを入れなくても、ここから始められます。ツールの名前を覚える必要はありません。<strong>順番さえ守れば、遠回りせず着実に進められます</strong>。あなたの会社が今どこにいるかを探しながら、読み進めてください。</p>
+            </div>
+          </div>
+
+          <p class="michisuji-zone zone-free reveal">ここまでお金はかかりません</p>
+
+          <details class="michisuji-step reveal">
+            <summary><span class="step-name">Step0 触る</span><span class="step-conclusion">AIチャットで間違えても、何も壊れません。</span><span class="michisuji-toggle" aria-hidden="true">詳しく <span class="michisuji-arrow">▼</span></span></summary>
+            <div class="michisuji-open">
+              <p><strong>今日の一歩：</strong>スマートフォンの無料AIアプリに「今晩の献立を考えて」と話しかける（5分）。</p>
+              <p class="michisuji-hook">本当に壊れないの？→ <a href="hajimete.html">構造計算ソフトとの違いを見る（入門ページへ）</a></p>
+            </div>
+          </details>
+
+          <details class="michisuji-step reveal">
+            <summary><span class="step-name">Step1 守る</span><span class="step-conclusion">会社で使う前に、ルールを紙1枚。核心は「機密を入れない」、これだけです。</span><span class="michisuji-toggle" aria-hidden="true">詳しく <span class="michisuji-arrow">▼</span></span></summary>
+            <div class="michisuji-open">
+              <p><strong>今日の一歩：</strong>コピペで使えるルールひな形を、自社の社名に差し替える（30分）。</p>
+              <p class="michisuji-hook">何が機密？→ <strong>発注者名・現場の住所・個人情報・契約金額</strong>の4つだけ。<a href="keiei.html#art-rules">ルールひな形で決め方を見る</a></p>
+            </div>
+          </details>
+
+          <details class="michisuji-step reveal" id="michisuji-step2">
+            <summary><span class="step-name">Step2 試す</span><span class="step-conclusion">無料のAIを、自分の仕事1つに使ってみる。頼み方と確かめ方に、少しだけコツがあります。</span><span class="michisuji-toggle" aria-hidden="true">詳しく <span class="michisuji-arrow">▼</span></span></summary>
+            <div class="michisuji-open">
+              <p><strong>今日の一歩：</strong>議事録のたたき台を1本AIに頼む（<a href="genba.html#try">コピペで試せる5分の実演へ</a>）。最後に「不足する情報は私に質問してください」と一言添える。</p>
+              <p class="michisuji-hook">AIの答えは信じていいの？→ <a href="genba.html#art-tashikamekata">確かめるのは3つだけ（手順記事へ）</a></p>
+            </div>
+          </details>
+
+          <details class="michisuji-step reveal">
+            <summary><span class="step-name">Step3 広める</span><span class="step-conclusion">広めるのは研修ではなく、「隣の人の5分」。使う人がひとり増えるたび、会社は変わり始めます。</span><span class="michisuji-toggle" aria-hidden="true">詳しく <span class="michisuji-arrow">▼</span></span></summary>
+            <div class="michisuji-open">
+              <p><strong>今日の一歩：</strong>自分がラクになった使い方を、隣の席の人にひとつ見せる。</p>
+              <p class="michisuji-hook">なぜ研修では広まらないのか？→ <a href="keiei.html#art-adoption">広めた手順の実体験を読む</a></p>
+            </div>
+          </details>
+
+          <p class="michisuji-zone zone-gate reveal">ここからが判断です</p>
+
+          <details class="michisuji-step is-gate reveal">
+            <summary><span class="step-name">Step4 払う</span><span class="step-conclusion">お金を払うのは、無料で足りなくなってから。払うなら「使う人の分だけ」。大きな契約は、無料で試しきってからで十分です。</span><span class="michisuji-toggle" aria-hidden="true">詳しく <span class="michisuji-arrow">▼</span></span></summary>
+            <div class="michisuji-open">
+              <p><strong>今日の一歩：</strong>手元のベンダー見積書を、<a href="keiei.html#art-vendor-truth">契約前に確かめる3つの事実</a>と並べて読む。</p>
+              <p class="michisuji-hook">月いくらが妥当？→ <a href="keiei.html#art-cost">3段階の費用の目安を見る（経営者ページへ）</a></p>
+            </div>
+          </details>
+
+          <details class="michisuji-step is-gate reveal">
+            <summary><span class="step-name">Step5 応える</span><span class="step-conclusion">発注者は、AIの活用を求め始めました。ここまでの5ステップが、そのまま備えになります。</span><span class="michisuji-toggle" aria-hidden="true">詳しく <span class="michisuji-arrow">▼</span></span></summary>
+            <div class="michisuji-open">
+              <p><strong>今日の一歩：</strong>国の動き（特記仕様書に生成AIの積極的な活用が明記される流れ）を、<a href="keiei.html#art-mlit">国交省の方針の記事</a>で5分で知る。</p>
+              <p class="michisuji-hook">会計検査で「誰もわかりません」をなくすには？→ <a href="genba.html#art-digitaltwin">AIを業務の専門家に育てる話へ</a></p>
+            </div>
+          </details>
+
+          <div class="michisuji-close reveal">
+            <span class="band">順番さえ守れば、大きく道を外すことはありません。</span>
+            まず試すなら、どのツールから？ <span class="close-arrow" aria-hidden="true">→</span> <a href="genba.html#flow" class="btn btn-primary btn-sm">30秒で選ぶ</a>
+          </div>
+        </section>
+
+        <!-- ===== フック・ストリップ（記事入口） ===== -->
+        <section class="sec sec--compact" id="hooks">
+          <div class="sec-head reveal">
+            <div>
+              <h2>まずは、この6本から</h2>
+              <p>気になる書き出しから、解説記事へ。全28本は<a href="keiei.html#articles">経営者向け</a>・<a href="genba.html#articles">実務向け</a>にまとめています。</p>
+            </div>
+          </div>
+          <div class="hook-strip reveal">
+            <a class="hook-card" href="genba.html#art-notebooklm">「社内の資料を覚えた"専属秘書"が、身近なAIでつくれます。」</a>
+            <a class="hook-card" href="keiei.html#art-hiring">「0.5人分の採用は、求人票では出せません。でも、AIなら出せます。」</a>
+            <a class="hook-card" href="genba.html#art-deep">「半日かかる調べものが、席を立っている間に終わります。」</a>
+            <a class="hook-card" href="genba.html#art-veterans">「『自分には関係ない』と感じるベテランこそ、いちばん強くなれます。」</a>
+            <a class="hook-card" href="genba.html#art-tashikamekata">「AIの答えの確かめ方は、たった3つ。むずかしくありません。」</a>
+            <a class="hook-card" href="keiei.html#art-failure">「私も、はじめは有償サービスで回り道をしました。」</a>
+          </div>
+        </section>
+
+        <!-- ===== About（運営者について & 目的） ===== -->
+        <section class="sec" id="about">
+          <div class="sec-head reveal">
+            <div>
+              <h2>高いAIシステムを契約する前に、<span class="nobr">ちょっと待ってください</span></h2>
+              <p>数百万円の専用システムを入れる前に、<strong>まず月3000円程度のAIで足りるかを確かめる</strong>。その判断材料を、実務目線で整理して発信しています。</p>
+            </div>
+          </div>
+
+          <div class="profile-wide reveal">
+            <div class="profile-avatar-wrapper">
+              <div class="profile-avatar-circle">
+                <img src="images/avatar_engineer.png" alt="civilAI（技術士）の顔イラスト" width="1024" height="1024" loading="lazy" class="profile-avatar-img">
+              </div>
+              <div class="profile-subtitle">現役・建設部門の技術士</div>
+            </div>
+            <div class="profile-info">
+              <div class="profile-name-row">
+                <div class="profile-name">civilAI（技術士）</div>
+              </div>
+              <p class="profile-byline">建設コンサルタント業界30年以上・建設現場管理3年以上／技術士（建設部門）／社内の“専用AI”を自作した実務者</p>
+              <p class="profile-bio">
+                建設コンサルタント業界で30年以上、建設現場の管理も3年以上たずさわってきた現役の技術者です。国土交通省 地方整備局長からの表彰をはじめ複数の表彰の受賞歴があり、土木学会・砂防学会での複数の論文発表、ドローンなど新技術に関する論文発表の実績もあります。日々の業務で生成AIを使い込み、社内資料の検索・作成を効率化する<strong>AIの仕組みを自作してきました</strong>。建設・建設コンサルの実務者が「専用システム」の契約で迷わないよう、実務目線で判断材料を発信しています。
+              </p>
+              <div class="profile-specs-grid">
+                <div class="profile-spec-item"><span class="bullet">★</span>技術士（建設部門）</div>
+                <div class="profile-spec-item"><span class="bullet">✓</span>コンクリート診断士</div>
+                <div class="profile-spec-item"><span class="bullet">✓</span>1級土木施工管理技士</div>
+                <div class="profile-spec-item"><span class="bullet">★</span>国土交通省 地方整備局長表彰</div>
+                <div class="profile-spec-item"><span class="bullet">✓</span>土木学会・砂防学会で論文発表（複数）</div>
+                <div class="profile-spec-item"><span class="bullet">✓</span>ドローン等 新技術の論文発表（複数）</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-purpose reveal">
+            <p class="lede">いま無料でも試せるAIで、かなりのことができます。</p>
+            <p>それを知らずに数百万円の契約をしてしまうと、もったいない。だから<strong>「先に、月3000円程度のAIで確かめませんか」</strong>——それが、このサイトの役目です。</p>
+            <p>あわせて、機密の守り方（入れないのは発注者名・現場の住所・個人情報・契約金額の4つだけ）と、<strong>AIの答えを元の資料で確かめる習慣</strong>まで、実務目線でご案内します。</p>
+          </div>
+        </section>
+
+        <!-- ===== お問い合わせ ===== -->
+        <section class="sec sec--compact" id="contact">
+          <div class="sec-head reveal">
+            <div>
+              <h2>お問い合わせ</h2>
+              <p>記事へのご質問、執筆・研修等のご相談はこちら。</p>
+            </div>
+          </div>
+          <div class="reveal">
+            <span class="contact-soon" aria-disabled="true">お問い合わせフォーム<span class="contact-soon-badge">準備中</span></span>
+          </div>
+        </section>
+
+        <!-- ===== お知らせ・更新情報 ===== -->
+        <section class="sec sec--compact" id="news">
+          <div class="sec-head reveal">
+            <div>
+              <h2>お知らせ・更新情報</h2>
+              <p>civilAI（技術士）の最新アップデート情報をお届けします。</p>
+            </div>
+          </div>
+          <div class="news-list reveal">
+            <div class="news-item">
+              <div class="news-link">
+                <div class="news-meta">
+                  <time class="news-date" datetime="2026-09-04">2026.09.04</time>
+                  <span class="info-badge badge-new">NEW</span>
+                </div>
+                <p class="news-text">解説記事の公開を開始しました。1本目は「打合せメモが5分で議事録に｜AIに任せる手順と、人が直す3点」です。</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-link">
+                <div class="news-meta">
+                  <time class="news-date" datetime="2026-07-07">2026.07.07</time>
+                  <span class="info-badge badge-new">NEW</span>
+                </div>
+                <p class="news-text">「社内の資料をAIに活用するには」への回答2本（3つの方法の全体像・資料の整え方）を追加し、解説記事を全28本にしました。各記事は順次公開します。</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <div class="news-link">
+                <div class="news-meta">
+                  <time class="news-date" datetime="2026-07-06">2026.07.06</time>
+                  <span class="info-badge badge-new">NEW</span>
+                </div>
+                <p class="news-text">実務向けに「AI活用マップ」「工事写真の整理」「はじめてのAIの選び方」などの解説を追加しました。各記事は順次公開します。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /.doc-main -->
+
+      <!-- ===== サイドバー（右・末尾の目次だけがstickyで追従＝定番） ===== -->
+      <aside class="sidebar" aria-label="補助情報">
+        <div class="side-card side-nav">
+          <p class="side-title">目的から読む</p>
+          <ul>
+            <li><a href="keiei.html">経営者の方へ（費用・判断）</a></li>
+            <li><a href="genba.html">実務で使う（手順・比較）</a></li>
+            <li><a href="hajimete.html">AI、はじめの一歩（入門）</a></li>
+          </ul>
+        </div>
+        <div class="side-card side-cta">
+          <p class="side-title">ご質問・ご相談</p>
+          <p>記事へのご質問、執筆・研修等のご相談はこちら。</p>
+          <a href="#contact" class="btn btn-primary btn-sm">お問い合わせ</a>
+        </div>
+        <div class="side-card side-toc">
+          <p class="side-title">このサイトの全体像</p>
+          <ul>
+            <li><a href="#doors" class="toc-link">まず、あなたに合った入口</a></li>
+            <li><a href="#mlit-move" class="toc-link">国の動き（今、始める理由）</a></li>
+            <li><a href="#michisuji" class="toc-link">導入の道筋（6ステップ）</a></li>
+            <li><a href="#hooks" class="toc-link">まずは、この6本から</a></li>
+            <li><a href="#about" class="toc-link">運営者について</a></li>
+            <li><a href="#contact" class="toc-link">お問い合わせ</a></li>
+            <li><a href="#news" class="toc-link">お知らせ</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div><!-- /.doc-layout -->
+  </div>
+</div>
+
+<!-- ===== フッター（SNSはフッターに集約＝標準配置） ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="pledge">建設業務のAI導入は、無理なく小さく始められます。</span>
+        現役の建設部門技術士が運営しています。
+      </div>
+      <div class="foot-social" aria-label="SNS（準備中）">
+        <span class="foot-social-label">フォロー：</span>
+        <!-- 公開時に href を実アカウントへ差し替えてください -->
+        <a class="foot-social-link is-disabled" title="note（準備中）" aria-label="noteをフォロー（準備中）">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+            <path d="M12 20h9M3 20v-8a2 2 0 0 1 2-2h4l2 3h4a2 2 0 0 1 2 2v5"/>
+          </svg>
+        </a>
+        <a class="foot-social-link is-disabled" title="X（準備中）" aria-label="Xをフォロー（準備中）">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false">
+            <line x1="5" y1="5" x2="19" y2="19"/>
+            <line x1="19" y1="5" x2="5" y2="19"/>
+          </svg>
+        </a>
+        <a class="foot-social-link is-disabled" title="Facebook（準備中）" aria-label="Facebookをフォロー（準備中）">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      ※本サイトの情報は作成時点のものです。料金・仕様・上限は各社が随時変更します。ご利用・ご契約の前に、公式情報で最新内容をご確認ください。<br>
+      © civilAI（技術士）
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
