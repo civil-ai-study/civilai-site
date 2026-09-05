@@ -16,11 +16,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<!-- OGP画像・favicon・canonical・構造化データ（※公開ドメイン確定時に og:url / og:image / canonical を絶対URLへ差し替え） -->
-<meta property="og:url" content="index.html">
-<meta property="og:image" content="images/hero_illustration.png">
-<meta name="twitter:image" content="images/hero_illustration.png">
-<link rel="canonical" href="index.html">
+<!-- OGP画像・favicon・canonical・構造化データ（公開URL確定済み。変更時は tools/set_site_url.py を再実行） -->
+<meta property="og:url" content="https://civil-ai-study.github.io/civilai-site/">
+<meta property="og:image" content="https://civil-ai-study.github.io/civilai-site/images/hero_illustration.png">
+<meta name="twitter:image" content="https://civil-ai-study.github.io/civilai-site/images/hero_illustration.png">
+<link rel="canonical" href="https://civil-ai-study.github.io/civilai-site/">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="images/avatar_engineer.png">
 <script type="application/ld+json">
@@ -28,7 +28,7 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "civilAI（技術士）",
-  "url": "index.html",
+  "url": "https://civil-ai-study.github.io/civilai-site/",
   "inLanguage": "ja",
   "description": "建設・建設コンサルの生成AI導入を、まず月3000円程度のAIチャットで確かめる。現役の建設部門技術士が実務目線で判断材料を整理。",
   "publisher": {
@@ -46,7 +46,8 @@
       {"@type": "EducationalOccupationalCredential", "credentialCategory": "コンクリート診断士"},
       {"@type": "EducationalOccupationalCredential", "credentialCategory": "1級土木施工管理技士"}
     ],
-    "award": "国土交通省 地方整備局長表彰"
+    "award": "国土交通省 地方整備局長表彰",
+    "sameAs": ["https://note.com/civilai", "https://x.com/civilai_gishi"]
   }
 }
 </script>
@@ -157,7 +158,7 @@
           </div>
           <div class="panel reveal">
             <div class="panel-text-content">
-              <p class="panel-body"><strong>発注者が、「AIを使ってほしい」と言い始めました。</strong> 国交省は2026年度から、直轄の建設コンサルタント業務で、特記仕様書に「生成AIの積極的な利活用を推進する」と明記する方針です。ねらいは省力化だけでなく、技術者が本質的な検討に注力し、成果物の品質を上げること。「使っていいのか」は、もう問いではありません（2026年4月報道）。</p>
+              <p class="panel-body"><strong>発注者が、「AIを使ってほしい」と言い始めました。</strong> 国交省は2026年度から、直轄の建設コンサルタント業務で、特記仕様書に「生成AIの積極的な利活用を推進する」と明記する方針です。ねらいは省力化だけでなく、技術者が本質的な検討に注力し、成果品の品質を上げること。「使っていいのか」は、もう問いではありません（2026年4月報道）。</p>
               <p class="panel-body">→ <a href="keiei.html#art-mlit">受託業務で使っていい？ 国交省の方針を読む（note01）</a></p>
             </div>
           </div>
@@ -239,7 +240,7 @@
             </div>
           </div>
           <div class="hook-strip reveal">
-            <a class="hook-card" href="genba.html#art-notebooklm">「社内の資料を覚えた"専属秘書"が、身近なAIでつくれます。」</a>
+            <a class="hook-card" href="genba.html#art-notebooklm">「社内の資料を覚えた"専属アシスタント"が、身近なAIでつくれます。」</a>
             <a class="hook-card" href="keiei.html#art-hiring">「0.5人分の採用は、求人票では出せません。でも、AIなら出せます。」</a>
             <a class="hook-card" href="genba.html#art-deep">「半日かかる調べものが、席を立っている間に終わります。」</a>
             <a class="hook-card" href="genba.html#art-veterans">「『自分には関係ない』と感じるベテランこそ、いちばん強くなれます。」</a>
@@ -385,15 +386,14 @@
         <span class="pledge">建設業務のAI導入は、無理なく小さく始められます。</span>
         現役の建設部門技術士が運営しています。
       </div>
-      <div class="foot-social" aria-label="SNS（準備中）">
+      <div class="foot-social" aria-label="SNS">
         <span class="foot-social-label">フォロー：</span>
-        <!-- 公開時に href を実アカウントへ差し替えてください -->
-        <a class="foot-social-link is-disabled" title="note（準備中）" aria-label="noteをフォロー（準備中）">
+        <a class="foot-social-link" href="https://note.com/civilai" target="_blank" rel="noopener" title="note" aria-label="noteをフォロー">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
             <path d="M12 20h9M3 20v-8a2 2 0 0 1 2-2h4l2 3h4a2 2 0 0 1 2 2v5"/>
           </svg>
         </a>
-        <a class="foot-social-link is-disabled" title="X（準備中）" aria-label="Xをフォロー（準備中）">
+        <a class="foot-social-link" href="https://x.com/civilai_gishi" target="_blank" rel="noopener" title="X" aria-label="Xをフォロー">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false">
             <line x1="5" y1="5" x2="19" y2="19"/>
             <line x1="19" y1="5" x2="5" y2="19"/>

@@ -16,11 +16,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<!-- OGP画像・favicon・canonical・構造化データ（※公開ドメイン確定時に og:url / og:image / canonical を絶対URLへ差し替え） -->
-<meta property="og:url" content="genba.html">
-<meta property="og:image" content="images/hero_illustration.png">
-<meta name="twitter:image" content="images/hero_illustration.png">
-<link rel="canonical" href="genba.html">
+<!-- OGP画像・favicon・canonical・構造化データ（公開URL確定済み。変更時は tools/set_site_url.py を再実行） -->
+<meta property="og:url" content="https://civil-ai-study.github.io/civilai-site/genba.html">
+<meta property="og:image" content="https://civil-ai-study.github.io/civilai-site/images/hero_illustration.png">
+<meta name="twitter:image" content="https://civil-ai-study.github.io/civilai-site/images/hero_illustration.png">
+<link rel="canonical" href="https://civil-ai-study.github.io/civilai-site/genba.html">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="images/avatar_engineer.png">
 <script type="application/ld+json">
@@ -28,19 +28,19 @@
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "実務で使う｜建設実務のAI活用 手順・選び方・比較",
-  "url": "genba.html",
+  "url": "https://civil-ai-study.github.io/civilai-site/genba.html",
   "inLanguage": "ja",
   "description": "議事録・照査・報告書の下書きなど、建設実務の仕事から生成AIを試す。30秒で合うツールを選び、比較表と手順記事で確かめながら進められる。",
   "isPartOf": {
     "@type": "WebSite",
     "name": "civilAI（技術士）",
-    "url": "index.html"
+    "url": "https://civil-ai-study.github.io/civilai-site/"
   },
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "index.html"},
-      {"@type": "ListItem", "position": 2, "name": "実務で使う", "item": "genba.html"}
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://civil-ai-study.github.io/civilai-site/"},
+      {"@type": "ListItem", "position": 2, "name": "実務で使う", "item": "https://civil-ai-study.github.io/civilai-site/genba.html"}
     ]
   },
   "author": {
@@ -53,7 +53,8 @@
       {"@type": "EducationalOccupationalCredential", "credentialCategory": "コンクリート診断士"},
       {"@type": "EducationalOccupationalCredential", "credentialCategory": "1級土木施工管理技士"}
     ],
-    "award": "国土交通省 地方整備局長表彰"
+    "award": "国土交通省 地方整備局長表彰",
+    "sameAs": ["https://note.com/civilai", "https://x.com/civilai_gishi"]
   }
 }
 </script>
@@ -101,7 +102,7 @@
           <div class="wrap hero-wrap">
             <div class="hero-text-area">
               <h1 class="reveal">日々の実務から、AIを試す。</h1>
-              <p class="sub reveal">議事録・照査・報告書の下書き——<strong>今日の業務ひとつ</strong>を、無料のAIチャット（ChatGPT・Gemini・Claude など）で。まず30秒で合うツールを選び、比較表と手順記事で確かめながら進められます。</p>
+              <p class="sub reveal">議事録・照査・報告書の下書き——<strong>今日の業務ひとつ</strong>を、AIチャット（ChatGPT・Gemini・Claude など）で。試すのは無料、業務の資料を扱うなら月3000円程度の有料プランから。まず30秒で合うツールを選び、比較表と手順記事で確かめながら進められます。</p>
               <p class="hero-routes reveal"><span>他の入口：</span><a href="keiei.html">経営者の方へ</a><a href="index.html#michisuji">導入の道筋（6ステップ）</a><a href="hajimete.html">AI、はじめの一歩</a></p>
             </div>
           </div>
@@ -125,7 +126,7 @@
         <!-- ===== まず1つ、5分でやってみる：議事録の実演（note非依存・自己完結） ===== -->
         <div class="try-box reveal" id="try">
           <h2 class="try-title">まず1つ、5分でやってみる：<span class="nobr">打合せメモを議事録に</span></h2>
-          <p class="try-lead">記事を読む前に、手を動かすのがいちばん早いです。無料のAIアプリ（ChatGPT・Gemini・Claudeのどれでも）に、下の走り書きメモと指示文をそのまま送ってみてください。<strong>30分かかっていた清書が、5分に。</strong></p>
+          <p class="try-lead">記事を読む前に、手を動かすのがいちばん早いです。AIアプリ（ChatGPT・Gemini・Claudeのどれでも）に、下の走り書きメモと指示文をそのまま送ってみてください。下のメモは練習用のサンプルなので無料プランで構いません。実際の業務資料は、会社が認めた環境（月3000円程度の有料プランが目安）で扱ってください。<strong>30分かかっていた清書が、5分に。</strong></p>
 
           <div class="copy-card try-card">
             <span class="copy-label">① まず、こんな走り書きメモを用意（そのまま試せる例です）</span>
@@ -158,13 +159,13 @@
               <tbody>
                 <tr><td>打合せメモを議事録に</td><td data-label="できること">30分の清書が、5分に</td><td data-label="記事"><a href="#art-minutes">21</a>・<a href="#art-tanomikata">07</a></td></tr>
                 <tr><td>工事写真の整理・台帳づくり</td><td data-label="できること">黒板読み取り・自動仕分け（写真は加工しない）</td><td data-label="記事"><a href="#art-photo">24</a></td></tr>
-                <tr><td>基準・過去資料から探す</td><td data-label="できること">出典付きで答える"専属秘書"を無料で</td><td data-label="記事"><a href="#art-notebooklm">06</a></td></tr>
+                <tr><td>基準・過去資料から探す</td><td data-label="できること">出典付きで答える"専属アシスタント"を無料で</td><td data-label="記事"><a href="#art-notebooklm">06</a></td></tr>
                 <tr><td>数量計算書の照査</td><td data-label="できること">第一次スクリーニングを任せる5STEP</td><td data-label="記事"><a href="#art-quantity">09</a></td></tr>
                 <tr><td>工法比較・技術調査</td><td data-label="できること">出典付きレポートを自動生成（※社外秘は入れない）</td><td data-label="記事"><a href="#art-deep">12</a></td></tr>
                 <tr><td>報告書・提案書の下書き</td><td data-label="できること">使うほど賢くなる"業務の分身"</td><td data-label="記事"><a href="#art-claude">10</a></td></tr>
                 <tr><td>過去の経緯確認・会計検査</td><td data-label="できること">数年後の会計検査に、根拠付きで答えられる</td><td data-label="記事"><a href="#art-digitaltwin">11</a></td></tr>
                 <tr><td>社内ルールづくり</td><td data-label="できること">コピペで使える6条のひな形</td><td data-label="記事"><a href="keiei.html#art-rules">04</a></td></tr>
-                <tr><td>費用の見当</td><td data-label="できること">無料→1人月数千円→大きな投資は壁の後</td><td data-label="記事"><a href="keiei.html#art-cost">16</a></td></tr>
+                <tr><td>費用の見当</td><td data-label="できること">試すのは無料、業務は1人月3000円程度、大きな投資は壁の後</td><td data-label="記事"><a href="keiei.html#art-cost">16</a></td></tr>
                 <tr><td>ベンダー見積の判断</td><td data-label="できること">契約前に確かめる3つの事実</td><td data-label="記事"><a href="keiei.html#art-vendor-truth">18</a></td></tr>
                 <tr><td>求人が来ない</td><td data-label="できること">先に社内の「時間」をつくる</td><td data-label="記事"><a href="keiei.html#art-hiring">19</a></td></tr>
               </tbody>
@@ -479,7 +480,7 @@
             <a id="art-minutes" class="art reveal" href="https://note.com/civilai/n/n67f9bfb74646" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">打合せメモが5分で議事録に｜AIに任せる手順と、人が直す3点</div><p class="ad">走り書きのメモを、AIで正式な議事録に。30分の清書が5分になります。頼み方と、最後に人が確認する3点まで、実例でご案内します。</p></a>
             <div id="art-photo" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">工事写真の整理・台帳づくりをAIで｜黒板の読み取りから仕分けまで</div><p class="ad">黒板の文字読み取り・工種別の自動仕分け・EXIF整理まで、AIでできること。提出写真の「加工禁止」の一線と守秘も整理します。</p><span class="soon">（note準備中）</span></div>
             <div id="art-data-prep" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">AIに読ませる前の、社内資料の整え方｜完璧な整理は要りません</div><p class="ad">準備は「1業務分・10ファイル・最終版だけ」から始められます。集め方・置き方・入れてはいけない4項目の隠し方をご案内します。</p><span class="soon">（note準備中）</span></div>
-            <div id="art-notebooklm" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">NotebookLMで社内資料を"専属アシスタント"に｜建設の無料AI</div><p class="ad">社内資料を丸ごと覚えた"専属秘書"を無料で作る手順です。出典付きで答えるので、照合も簡単です。</p><span class="soon">（note準備中）</span></div>
+            <div id="art-notebooklm" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">NotebookLMで社内資料を"専属アシスタント"に｜建設の無料AI</div><p class="ad">社内資料を丸ごと覚えた"専属アシスタント"を無料で作る手順です。出典付きで答えるので、照合も簡単です。</p><span class="soon">（note準備中）</span></div>
             <div id="art-tanomikata" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">AIへの頼み方｜答えの質は「最後の一言」で決まる</div><p class="ad">AIの答えの質は頼み方で決まります。覚えるのは「4つの足し算」と、最後の一言だけです。</p><span class="soon">（note準備中）</span></div>
             <div id="art-tashikamekata" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">AIの答え、どこまで信じていい？｜確かめるのは3つだけ</div><p class="ad">AIは正解と同じ顔で間違えます。それでも疑う必要はありません。確かめる場所は、3つだけです。</p><span class="soon">（note準備中）</span></div>
           </div>
@@ -576,14 +577,14 @@
         <span class="pledge">建設業務のAI導入は、無理なく小さく始められます。</span>
         現役の建設部門技術士が運営しています。
       </div>
-      <div class="foot-social" aria-label="SNS（準備中）">
+      <div class="foot-social" aria-label="SNS">
         <span class="foot-social-label">フォロー：</span>
-        <a class="foot-social-link is-disabled" title="note（準備中）" aria-label="noteをフォロー（準備中）">
+        <a class="foot-social-link" href="https://note.com/civilai" target="_blank" rel="noopener" title="note" aria-label="noteをフォロー">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
             <path d="M12 20h9M3 20v-8a2 2 0 0 1 2-2h4l2 3h4a2 2 0 0 1 2 2v5"/>
           </svg>
         </a>
-        <a class="foot-social-link is-disabled" title="X（準備中）" aria-label="Xをフォロー（準備中）">
+        <a class="foot-social-link" href="https://x.com/civilai_gishi" target="_blank" rel="noopener" title="X" aria-label="Xをフォロー">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false">
             <line x1="5" y1="5" x2="19" y2="19"/>
             <line x1="19" y1="5" x2="5" y2="19"/>
