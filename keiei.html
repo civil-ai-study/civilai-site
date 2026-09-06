@@ -74,6 +74,7 @@
       <a href="keiei.html" class="hideS is-active">経営者の方へ</a>
       <a href="genba.html" class="hideS">実務で使う</a>
       <a href="hajimete.html" class="hideS">AI、はじめの一歩</a>
+      <a href="shiryo.html" class="hideS">資料</a>
       <a href="index.html#contact" class="nav-cta">お問い合わせ</a>
       <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="navMenu">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
@@ -84,6 +85,7 @@
     <a href="keiei.html">経営者の方へ</a>
     <a href="genba.html">実務で使う</a>
     <a href="hajimete.html">AI、はじめの一歩</a>
+    <a href="shiryo.html">資料</a>
     <a href="index.html#contact">お問い合わせ</a>
   </div>
 </nav>
@@ -131,16 +133,16 @@
           </div>
           <div class="panel panel--gate reveal">
             <div class="panel-text-content">
-              <p class="panel-body"><strong>線引きの紙1枚 → まず無料で試してもらう → 使う人の人数分だけ払う。</strong> 30分で全体が見える地図を、note で順次公開します。</p>
+              <p class="panel-body"><strong>どのデータを入れてよいかを決める → まず試してもらう → 使う人の人数分だけ払う。</strong> 30分で全体が見える地図を、note で順次公開します。</p>
               <p class="panel-body">→ <a href="#art-map">経営者のための生成AI 30分地図（note20）</a></p>
             </div>
           </div>
 
           <div class="prop-grid reveal">
             <div class="prop-card">
-              <h3>① 線引きを決める</h3>
-              <p>AIに入れないのは4つだけ——発注者名・現場の住所・個人情報・契約金額。この<strong>「紙1枚のルール」</strong>から始めます。</p>
-              <p class="prop-more"><a href="#art-rules">社内ルールのひな形（note04）</a></p>
+              <h3>① 入れてよいデータを決める</h3>
+              <p>止めるのは、人の名前がわかるものと、まだ公表されていない金額だけ。会社が契約したAIなら、施工計画書も議事録も<strong>そのまま扱えます</strong>。</p>
+              <p class="prop-more"><a href="#art-rules">AIに入れてよいデータ、いけないデータ（note04）</a></p>
             </div>
             <div class="prop-card">
               <h3>② まず無料で試す</h3>
@@ -174,14 +176,14 @@
               <p class="prop-more"><a href="#art-cost">費用の3段階を見る（note16）</a></p>
             </div>
             <div class="prop-card">
-              <h3>2. 社外秘の資料も、PDFを読み込ませるだけで使える</h3>
-              <p>NotebookLM（無料）に過去の報告書や図面を入れれば、<strong>その日から「社内資料に答えるAI」になります</strong>。各社が「入れたファイルを学習に使わない」方針を公式に明記しており、中身が外に漏れるリスクも低くできます。</p>
+              <h3>2. 社内の資料に答えるAIは、専用システムを買わなくても持てる</h3>
+              <p>NotebookLMなら、PDFを読み込ませるだけで、<strong>渡した資料だけを根拠に出典付きで答えます</strong>。提供元は「入れたファイルを学習に使わない」方針を公式に明記しています（※最新は公式でご確認ください）。まずは発注者が公開している共通仕様書で試し、<strong>自社の資料に進むときは、会社が契約した環境（法人向け）に移ってください</strong>。</p>
               <p class="prop-more"><a href="genba.html#art-notebooklm">安全な理由と手順を見る（note06）</a></p>
             </div>
             <div class="prop-card">
               <h3>3. 高い専用システムは、会社全体で使う段階になってからで十分</h3>
               <p>「何万件もの資料を一度に検索したい」「部署ごとに見られる範囲を分けたい」——<strong>そこまで来て初めて、大きな投資の出番です</strong>。</p>
-              <p class="prop-more"><a href="genba.html#art-pillar">「建設特化AI」は本当に必要？（note02）</a></p>
+              <p class="prop-more"><a href="#art-pillar-k">「建設特化AI」は本当に必要？（note02）</a></p>
             </div>
           </div>
 
@@ -189,7 +191,7 @@
             <img src="images/notebooklm_concept.png" alt="資料を安全に扱う仕組みのイメージ" width="1024" height="1024" loading="lazy">
             <figcaption>資料は外と切り離した場所で処理され、答えには出典ページが付きます。だから、元の資料をその場で見比べられます。</figcaption>
           </figure>
-          <p class="prop-next reveal">AIに入れないのは4つだけ——<strong>発注者名・現場の住所・個人情報・契約金額</strong>。この線引きさえ守れば、無料プランでも安心して使えます。</p>
+          <p class="prop-next reveal">止めるのは、<strong>人の名前がわかるもの</strong>と、<strong>まだ公表されていない金額</strong>だけ。ここさえ外せば、会社が契約したAIで業務の資料をそのまま扱えます。</p>
         </section>
 
         <!-- ===== 費用の相場と比較の見かた ===== -->
@@ -285,10 +287,11 @@
 
           <p class="art-group reveal">経営者の判断</p>
           <div class="art-grid">
+            <a id="art-pillar-k" class="art pillar reveal" href="https://note.com/civilai/n/nb6ab0269eca1" target="_blank" rel="noopener"><span class="tagn">総論</span><div class="at">「建設特化AI」は本当に必要？月3000円で十分なAI活用｜技術士が解説</div><p class="ad">「御社専用の建設AI」の営業を受けたら、契約の前に読む記事です。月3000円程度で足りるかを先に確かめます。</p></a>
             <div id="art-map" class="art pillar reveal is-soon"><span class="tagn">総論</span><div class="at">経営者のための生成AI 30分地図｜建設の中小は何から決めるか</div><p class="ad">建設の中小の経営者がAIについて決めることは3つだけ。30分で全体像がつかめる「地図」です。</p><span class="soon">（note準備中）</span></div>
             <div id="art-internal-docs" class="art reveal is-soon"><span class="tagn">総論</span><div class="at">社内の報告書をAIに活用する方法は3つ｜専用システムなしで、今日から</div><p class="ad">過去の報告書・技術資料をAIに活かす3つの方法を、費用と手間の一覧で整理。どれもサブスクの生成AIだけで、専用システムは要りません。</p><span class="soon">（note準備中）</span></div>
             <div id="art-mlit" class="art reveal is-soon"><span class="tagn">総論</span><div class="at">受託業務で生成AIを使っていい？国交省の方針と発注者との関係</div><p class="ad">国交省が特記仕様書に生成AIの扱いを明記へ。受託業務でのAIは「隠す」から「共有する」に変わります。</p><span class="soon">（note準備中）</span></div>
-            <div id="art-rules" class="art reveal is-soon"><span class="tagn">セキュリティ</span><div class="at">建設会社の生成AI社内ルール｜ひな形と決め方（経営者向け）</div><p class="ad">そのままコピペで使える生成AI社内ルールのひな形付き。経営者が決めることは、3つだけです。</p><span class="soon">（note準備中）</span></div>
+            <div id="art-rules" class="art reveal is-soon"><span class="tagn">セキュリティ</span><div class="at">建設会社の生成AI社内ルール｜AIに入れてよいデータ、いけないデータ</div><p class="ad">会社が契約したAIなら、施工計画書も議事録もそのまま入れられます。止めるのは個人情報だけ。1枚の表で整理しました。</p><span class="soon">（note準備中）</span></div>
             <div id="art-cases" class="art reveal is-soon"><span class="tagn">事例</span><div class="at">地方・中小の建設会社の生成AI事例｜10名でも始められる</div><p class="ad">従業員10名台からの建設会社が、生成AIで何をどう変えたか。地方・中小の事例だけを集めました。</p><span class="soon">（note準備中）</span></div>
             <div id="art-adoption" class="art reveal is-soon"><span class="tagn">事例</span><div class="at">社員がAIを使ってくれない｜建設会社で社内に広めた手順</div><p class="ad">研修では広まりません。社員がAIを使い始めるのは「隣の人の5分」を見たとき。実体験の手順です。</p><span class="soon">（note準備中）</span></div>
             <div id="art-cost" class="art reveal is-soon"><span class="tagn">総論</span><div class="at">生成AI、会社で月いくら？建設の中小の費用相場と考え方</div><p class="ad">建設の中小企業の生成AI費用は3段階で考えます。目安は、試すのは無料→1人あたり月3000円程度→それ以上は壁の後。</p><span class="soon">（note準備中）</span></div>
@@ -296,6 +299,7 @@
             <div id="art-vendor-truth" class="art reveal is-soon"><span class="tagn">総論</span><div class="at">その"建設特化AI"、契約前に確かめる3つの事実｜技術士</div><p class="ad">"建設特化AI"の契約前に、営業資料からは分からない3つの事実を確かめてください。技術士がまとめました。</p><span class="soon">（note準備中）</span></div>
             <div id="art-hiring" class="art reveal is-soon"><span class="tagn">総論</span><div class="at">求人を出しても来ない建設会社へ｜人手不足はAIで「時間」をつくる</div><p class="ad">求人に応募が来ないなら、先に社内の「時間」をつくる。AI費用を人件費の棚で考える話です。</p><span class="soon">（note準備中）</span></div>
           </div>
+          <p class="prop-more reveal">費用・社内ルール・契約の判断材料を、公開順にまとめています。<a href="https://note.com/civilai/m/mfca4eaa5fe30" target="_blank" rel="noopener">noteのマガジン「経営者の判断（費用・ルール・契約）」を見る</a></p>
         </section>
 
       </div><!-- /.doc-main -->

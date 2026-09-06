@@ -388,6 +388,13 @@ h1, h2, h3, .side-title, .step-name, .quiz-title {
 /* 金額など、途中で改行させない語のための汎用クラス（例：月3000円） */
 .nobr { white-space: nowrap; }
 
+@media (max-width: 400px) {
+  /* 375px では、見出し内の .nobr が親幅を超える（実測：genba.html §1 で 276 > 266）。
+     .nobr は語のまとまりを保つための装飾なので、狭い画面では折り返しを許す。
+     本文中の金額などの .nobr は、そのまま維持する。 */
+  .sec-head h2 .nobr { white-space: normal; }
+}
+
 h1 .em {
   color: var(--ink-2); /* DESIGN-1: 強調は色でなくマーカーで。青はリンク専用 */
   background: linear-gradient(transparent 62%, rgba(27, 122, 67, 0.16) 62%, rgba(27, 122, 67, 0.16) 92%, transparent 92%);
@@ -514,6 +521,13 @@ h1 .em {
   align-items: flex-start; /* 見出しが複数行に折り返っても番号バッジが常に先頭行の上端に固定される（baselineだと1行目だけを基準にズレて見えるため修正） */
   gap: 1em;
   margin-bottom: 36px;
+}
+
+.sec-head > div {
+  /* flexアイテムの既定 min-width:auto を解除する。これがないと、中の .nobr（折り返さない語）
+     の min-content 幅が下限になり、375px で親幅を9px超えていた（2026-09-06 実測。keiei.html §2）。
+     CSS Flexbox 仕様 §4.5「Automatic Minimum Size of Flex Items」。MDN も min-width:0 を標準の対処として挙げる。 */
+  min-width: 0;
 }
 
 .sec-no {
