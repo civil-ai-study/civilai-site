@@ -62,7 +62,7 @@
 <body>
 
 <!-- ===== ナビ（3ドア構造・全ページ共通） ===== -->
-<div class="top-bar"><div class="wrap"><span>数百万円の専用AIを契約する前に——現役の建設部門技術士が、建設AIの実態と判断基準を実務目線で整理しています。</span></div></div>
+<div class="top-bar"><div class="wrap"><span>建設会社・建設コンサルの方へ｜現役の技術士（建設部門）が、AIの始め方と費用の目安をまとめています</span></div></div>
 
 <nav class="nav">
   <div class="nav-in">
@@ -99,40 +99,20 @@
 
       <div class="doc-main">
 
-        <!-- ページタイトル（本文カラム内・標準ブログ型） -->
-        <header class="hero">
-          <div class="wrap hero-wrap">
-            <div class="hero-text-area">
-              <h1 class="reveal">日々の実務から、AIを試す。</h1>
-              <p class="sub reveal">議事録・照査・報告書の下書き——<strong>今日の業務ひとつ</strong>を、AIチャット（ChatGPT・Gemini・Claude など）で。試すのは無料、業務の資料を扱うなら月3000円程度の有料プランから。まず30秒で合うツールを選び、比較表と手順記事で確かめながら進められます。</p>
-              <p class="hero-routes reveal"><span>他の入口：</span><a href="keiei.html">経営者の方へ</a><a href="index.html#junban">会社にAIを入れる順番</a><a href="hajimete.html">AI、はじめの一歩</a></p>
-            </div>
-          </div>
+        <!-- 刷新 Phase 1：今夜の書類から。施工の書類に効く記事を上へ -->
+        <header class="m-hero">
+          <h1>日報・打合せ簿の下書きを、<span class="em">AIに頼む</span>。</h1>
+          <p class="m-sub">議事録や報告書も同じです。Claude・ChatGPT・Gemini などのAIに下書きを頼む手順と、そのまま使える頼み方をまとめました。</p>
+          <p class="m-note">今夜は、下の練習用メモで試せます（無料のAIで構いません）。自分の日報や書類を入れるのは、会社が有料プラン（法人契約）を用意してからです。会社に頼むときは、<a href="keiei.html">経営者向けのページ</a>を見せてください。入れてよいもの・いけないものは<a href="keiei.html#art-rules">こちら</a>。</p>
         </header>
 
-        <!-- モバイル：折りたたみ目次 -->
-        <details class="toc-mobile">
-          <summary>このページの内容</summary>
-          <ul>
-            <li><a href="#try">まず1つ、5分でやってみる</a></li>
-            <li><a href="#gyakubiki">この仕事、AIでできる？</a></li>
-            <li><a href="#flow">30秒で選ぶ・ツール選び</a></li>
-            <li><a href="#compare">機能比較表</a></li>
-            <li><a href="#ringi">社内で聞かれたら</a></li>
-            <li><a href="#articles">手順の解説記事</a></li>
-          </ul>
-        </details>
-
-        <p class="try-note reveal" style="margin-top:0">AIを触るのが初めてなら、まずは入門ページ<a href="hajimete.html">「AI、はじめの一歩」</a>で、入れ方から順にご案内します。</p>
-
-        <!-- ===== まず1つ、5分でやってみる：議事録の実演（note非依存・自己完結） ===== -->
-        <div class="try-box reveal" id="try">
+        <div class="try-box" id="try">
           <h2 class="try-title">まず1つ、5分でやってみる：<span class="nobr">打合せメモを議事録に</span></h2>
-          <p class="try-lead">記事を読む前に、手を動かすのがいちばん早いです。AIアプリ（ChatGPT・Gemini・Claudeのどれでも）に、下の走り書きメモと指示文をそのまま送ってみてください。下のメモは練習用のサンプルなので無料プランで構いません。実際の業務資料は、会社が認めた環境（月3000円程度の有料プランが目安）で扱ってください。<strong>30分かかっていた清書が、5分に。</strong></p>
+          <p class="try-lead">記事を読む前に、手を動かすのがいちばん早いです。AIアプリ（Claude・ChatGPT・Gemini のどれでも）に、下の走り書きメモと指示文をそのまま送ってみてください。下のメモは練習用なので、無料のAIで構いません。</p>
 
           <div class="copy-card try-card">
             <span class="copy-label">① まず、こんな走り書きメモを用意（そのまま試せる例です）</span>
-            <p>「<span class="copy-text">10/3 現場事務所 出席A社2名・当社2名／側溝の勾配 現況0.3%を0.5%に変更で合意／管径は次回まで保留／写真整理は今週中／次回打合せ10/17」</span>」</p>
+            <p>「<span class="copy-text">10/3 現場事務所 出席A社2名・当社2名／側溝の勾配 現況0.3%を0.5%に変更で合意／管径は次回まで保留／写真整理は今週中／次回打合せ10/17</span>」</p>
             <button type="button" class="btn btn-ghost btn-sm copy-btn">このメモをコピー</button>
           </div>
 
@@ -142,215 +122,32 @@
             <button type="button" class="btn btn-primary btn-sm copy-btn">この指示文をコピー</button>
           </div>
 
-          <p class="try-note">項目ごとに整った議事録が返ってきます。あとは<strong>決定事項・数値・固有名詞だけ、自分の目で確認して直す</strong>——その確認こそ、技術者にしかできない仕事です。この手順の詳しい版は<a href="#art-minutes">記事21</a>、頼み方のコツは<a href="#art-tanomikata">記事07</a>、確かめ方は<a href="#art-tashikamekata">記事08</a>で。</p>
-          <p class="try-note">※無料のAIで試すときは、上のような練習用のメモで。会社の資料は、会社が契約したAIで扱います（<a href="keiei.html#art-rules">入れてよいものは1枚の表で</a>）。</p>
+          <p class="try-note">項目ごとに整った議事録が返ってきます。あとは<strong>決定事項・数値・固有名詞だけ、自分の目で確認して直す</strong>——その確認こそ、技術者にしかできない仕事です。くわしくは<a href="https://note.com/civilai/n/n67f9bfb74646" target="_blank" rel="noopener">打合せメモが5分で議事録に</a>で。</p>
         </div>
 
-        <!-- ===== 逆引き「この仕事、AIでできる？」＝タスク起点（最上段） ===== -->
-        <section class="sec" id="gyakubiki">
-          <div class="sec-head reveal">
-            <span class="sec-no">1</span>
-            <div>
-              <h2>まず、あなたの仕事から。<span class="nobr">この仕事、AIでできる？</span></h2>
-              <p>近いものを選ぶと、担当できるAIと手順記事に飛べます。<strong>ツールの名前は、後で覚えれば大丈夫です</strong>。業務の流れ全体でどこに挟むかは、<a href="#art-workflow">AI活用マップ</a>で見渡せます。</p>
-            </div>
-          </div>
-          <div class="reveal">
-            <table class="gyakubiki-table">
-              <thead><tr><th>やりたい仕事</th><th>できること</th><th>記事</th></tr></thead>
-              <tbody>
-                <tr><td>打合せメモを議事録に</td><td data-label="できること">30分の清書が、5分に</td><td data-label="記事"><a href="#art-minutes">21</a>・<a href="#art-tanomikata">07</a></td></tr>
-                <tr><td>工事写真の整理・台帳づくり</td><td data-label="できること">黒板読み取り・自動仕分け（写真は加工しない）</td><td data-label="記事"><a href="#art-photo">24</a></td></tr>
-                <tr><td>基準・過去資料から探す</td><td data-label="できること">出典付きで答える"専属アシスタント"を無料で</td><td data-label="記事"><a href="#art-notebooklm">06</a></td></tr>
-                <tr><td>数量計算書の照査</td><td data-label="できること">第一次スクリーニングを任せる5STEP</td><td data-label="記事"><a href="#art-quantity">09</a></td></tr>
-                <tr><td>工法比較・技術調査</td><td data-label="できること">出典付きレポートを自動生成（※社外秘は入れない）</td><td data-label="記事"><a href="#art-deep">12</a></td></tr>
-                <tr><td>施工計画書・打合せ簿の下書き</td><td data-label="できること">工事ごとにAIを1つ作って育てる5ステップ</td><td data-label="記事"><a href="#art-claude">10</a></td></tr>
-                <tr><td>過去の経緯確認・会計検査</td><td data-label="できること">数年後の会計検査に、根拠付きで答えられる</td><td data-label="記事"><a href="#art-digitaltwin">11</a></td></tr>
-                <tr><td>社内ルールづくり</td><td data-label="できること">どのAIに、どのデータを入れてよいか</td><td data-label="記事"><a href="keiei.html#art-rules">04</a></td></tr>
-                <tr><td>費用の見当</td><td data-label="できること">試すのは無料、業務は1人月3000円程度、大きな投資は壁の後</td><td data-label="記事"><a href="keiei.html#art-cost">16</a></td></tr>
-                <tr><td>ベンダー見積の判断</td><td data-label="できること">契約前に確かめる3つの事実</td><td data-label="記事"><a href="keiei.html#art-vendor-truth">18</a></td></tr>
-                <tr><td>求人が来ない</td><td data-label="できること">先に社内の「時間」をつくる</td><td data-label="記事"><a href="keiei.html#art-hiring">19</a></td></tr>
-              </tbody>
-            </table>
-          </div>
+        <section class="sec" id="shigoto">
+          <h2 class="m-h2">あなたの仕事から選ぶ</h2>
+          <table class="gyakubiki-table">
+            <thead><tr><th>やりたい仕事</th><th>読む記事</th></tr></thead>
+            <tbody>
+              <tr><td>日報・KY記録・工程表・写真台帳の下書き</td><td data-label="読む記事"><a href="https://note.com/civilai/n/n58a073b91a18" target="_blank" rel="noopener">工事が進むほど、AIは現場に詳しくなる（日報・KY・写真台帳の下書き）</a></td></tr>
+              <tr><td>打合せメモを議事録・打合せ簿に</td><td data-label="読む記事"><a href="https://note.com/civilai/n/n67f9bfb74646" target="_blank" rel="noopener">打合せメモが5分で議事録に</a></td></tr>
+              <tr><td>工事名・工期などを、書類ごとに何度も入力している</td><td data-label="読む記事"><a href="https://note.com/civilai/n/n62de98d5bdc0" target="_blank" rel="noopener">契約書をAIに読ませれば、その後の作業は自動になります</a></td></tr>
+              <tr><td>同じ直しの指示を、毎回AIに書いている</td><td data-label="読む記事"><a href="https://note.com/civilai/n/n70691bac3c3c" target="_blank" rel="noopener">1回だけ教えれば、AIがずっと覚えています</a></td></tr>
+              <tr><td>基準書や仕様書から、該当する箇所を探す</td><td data-label="読む記事"><a href="https://note.com/civilai/n/nf162413defa3" target="_blank" rel="noopener">「あの基準、どの資料に書いてあったか」を、NotebookLMで探す</a></td></tr>
+              <tr><td>思った答えが返ってこない</td><td data-label="読む記事"><a href="https://note.com/civilai/n/n8abf720067d7" target="_blank" rel="noopener">AIへの頼み方｜答えの質は「最後の一言」で決まる</a></td></tr>
+              <tr><td>AIの答えを、どこまで信じてよいか</td><td data-label="読む記事"><a href="https://note.com/civilai/n/nb8b45b7b3496" target="_blank" rel="noopener">AIの答えは、どこまで信じていいか｜確かめる3か所</a></td></tr>
+            </tbody>
+          </table>
         </section>
 
-        <!-- ===== 判断フロー・30秒で選ぶ・用途スタック ===== -->
-        <section class="sec" id="flow">
-          <div class="sec-head reveal">
-            <span class="sec-no">2</span>
-            <div>
-              <h2>やりたいことから、<span class="nobr">合うツールを選ぶ</span></h2>
-              <p>あなたの業務が「何を実現したいか」によって、<strong>最適なツールは変わります</strong>。まず30秒で当たりをつけ、下の<a href="#compare">比較表</a>で見比べてください。</p>
-            </div>
-          </div>
-
-          <!-- 30秒で選ぶツール -->
-          <div class="quiz-area reveal">
-            <h3 class="quiz-title">30秒で選ぶ｜あなたの業務に、合うツールは？</h3>
-            <p class="quiz-subtitle">やりたいことを1つ選ぶだけ。合うツールと「今すぐの3手」をその場でお答えします。</p>
-            <div class="quiz-choices">
-              <button class="btn btn-quiz" onclick="runQuiz('notebooklm')">保有する設計図書・技術基準書の検索・要約</button>
-              <button class="btn btn-quiz" onclick="runQuiz('claude')">技術提案書や報告書の作成・文章推敲の効率化</button>
-              <button class="btn btn-quiz" onclick="runQuiz('filesearch')">自社専用の資料検索AIを、自分でつくってみたい（少しプログラムができる方）</button>
-            </div>
-            <div class="quiz-result" id="quizResult" style="display: none;" aria-live="polite">
-              <div class="quiz-result-card">
-                <span class="quiz-result-badge">選んだ結果</span>
-                <h4 class="quiz-result-name" id="quizResultName"></h4>
-                <p class="quiz-result-desc" id="quizResultDesc"></p>
-                <p class="quiz-result-more" id="quizResultMore"></p>
-                <a class="btn btn-primary btn-sm" id="quizResultLink">該当ツールの詳細へ移動</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="flow">
-            <div class="node reveal">建設業務でAIを使いたい</div>
-            <div class="connector reveal"></div>
-            <div class="node q reveal">何をしたい？</div>
-            <div class="connector reveal"></div>
-            <div class="tool-stack-card reveal">
-              <h3 class="stack-title">用途から、ざっくり選ぶ</h3>
-              <p class="stack-subtitle">やりたいことに近いツールを選んで、記事へ。くわしい機能の比較は、下の<a href="#compare">比較表</a>で見比べられます。</p>
-
-              <div class="stack-layers">
-
-                <a href="#art-notebooklm" class="stack-layer layer-tier1">
-                  <div class="layer-badge-col">
-                    <span class="layer-level">選択肢 1</span>
-                    <span class="layer-cost cost-free">無料（※本格利用は有料プラン推奨）</span>
-                  </div>
-                  <div class="layer-main-col">
-                    <h4 class="layer-name">
-                      <svg class="layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                      </svg>
-                      NotebookLM
-                    </h4>
-                    <p class="layer-desc">手元の資料（仕様書・基準書・報告書）を読み込ませ、出典付きで質問・要約。社内資料も扱えます。</p>
-                  </div>
-                  <div class="layer-meta-col">
-                    <span class="layer-capability">資料のQ&amp;A / 要約</span>
-                    <span class="layer-skill">プログラミング不要・即日導入</span>
-                    <span class="layer-duration">所要時間: 5分</span>
-                  </div>
-                </a>
-
-                <a href="#art-claude" class="stack-layer layer-tier2">
-                  <div class="layer-badge-col">
-                    <span class="layer-level">選択肢 2</span>
-                    <span class="layer-cost cost-low">月3000円ほど（※お試しは無料でも可能）</span>
-                  </div>
-                  <div class="layer-main-col">
-                    <h4 class="layer-name">
-                      <svg class="layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                      </svg>
-                      Claudeプロジェクト / ChatGPT
-                    </h4>
-                    <p class="layer-desc">工事ごとに1つ作り、特記仕様書や打合せ簿を入れておきます。書類を添付するほど、その工事に合った答えが返ります。</p>
-                  </div>
-                  <div class="layer-meta-col">
-                    <span class="layer-capability">文書作成 / 推敲</span>
-                    <span class="layer-skill">指示文の設定・開発不要</span>
-                    <span class="layer-duration">所要時間: 10分</span>
-                  </div>
-                </a>
-
-                <a href="#art-deep" class="stack-layer layer-tier2">
-                  <div class="layer-badge-col">
-                    <span class="layer-level">選択肢 3</span>
-                    <span class="layer-cost cost-low">無料は回数制限あり</span>
-                  </div>
-                  <div class="layer-main-col">
-                    <h4 class="layer-name">
-                      <svg class="layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                        <circle cx="11" cy="11" r="8"/>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                      </svg>
-                      Gemini Deep Research
-                    </h4>
-                    <p class="layer-desc">ネット上の公開情報を調べさせ、工法比較や技術レポートを自動作成。※社外秘・個人情報・成果品は入れない。</p>
-                  </div>
-                  <div class="layer-meta-col">
-                    <span class="layer-capability">公開情報の調査 / 比較表</span>
-                    <span class="layer-skill">設定不要</span>
-                    <span class="layer-duration">所要時間: 15分</span>
-                  </div>
-                </a>
-
-                <a href="#art-filesearch" class="stack-layer layer-tier3">
-                  <div class="layer-badge-col">
-                    <span class="layer-level">選択肢 4</span>
-                    <span class="layer-cost cost-low">月に数百円規模（少しのプログラムが必要）</span>
-                  </div>
-                  <div class="layer-main-col">
-                    <h4 class="layer-name">
-                      <svg class="layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                        <polygon points="12 2 2 7 12 12 22 7 12 2"/>
-                        <polyline points="2 17 12 22 22 17"/>
-                        <polyline points="2 12 12 17 22 12"/>
-                      </svg>
-                      Gemini File Search
-                    </h4>
-                    <p class="layer-desc">会社の資料を検索できるAIを、自分でつくる。外注だと数百万円かかることもある仕組みを、月に数百円規模で。少し設定が必要です。</p>
-                  </div>
-                  <div class="layer-meta-col">
-                    <span class="layer-capability">自社専用の検索AI（自作）</span>
-                    <span class="layer-skill">簡単な設定（少しのプログラムが必要）</span>
-                    <span class="layer-duration">所要時間: 30分</span>
-                  </div>
-                </a>
-
-                <div class="stack-layer layer-tier4">
-                  <div class="layer-badge-col">
-                    <span class="layer-level">個別開発</span>
-                    <span class="layer-cost cost-high">初期数十万〜数百万円</span>
-                  </div>
-                  <div class="layer-main-col">
-                    <h4 class="layer-name">
-                      <svg class="layer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                        <line x1="8" y1="21" x2="16" y2="21"/>
-                        <line x1="12" y1="17" x2="12" y2="21"/>
-                      </svg>
-                      有料「専用システム」（建設特化の生成AI等）
-                    </h4>
-                    <p class="layer-desc">会社全体で、誰が何を見たかの記録や既存データとのつなぎ込みまで必要になった段階の最終手段。まず上のツールで試してから。</p>
-                  </div>
-                  <div class="layer-meta-col">
-                    <span class="layer-capability">全社統制 / 権限 / システム連携</span>
-                    <span class="layer-skill">導入代行（ベンダー管理）</span>
-                    <span class="layer-duration">所要時間: 数週間〜数ヶ月</span>
-                  </div>
-                </div>
-
-              </div>
-              <p class="stack-note">※料金・仕様・上限は各社が随時変更します。ご利用・ご契約の前に、公式情報で最新内容をご確認ください。</p>
-            </div>
-            <div class="connector reveal"></div>
-            <div class="node q reveal">汎用ツールで、限界に突き当たりましたか？</div>
-            <div class="connector reveal"></div>
-            <div class="gate-row">
-              <div class="outcome no reveal"><span class="tag">No</span><div class="title">汎用ツールで足ります。</div><p class="note">社員数十名・資料数千件規模の会社なら、<strong>大半の業務は汎用ツールでまかなえます</strong>。段階を踏むことで、不要な支出を避けられます。</p></div>
-              <div class="outcome yes reveal"><span class="tag">Yes</span><div class="title">この段階で初めて、専用システムの導入検討を推奨</div><p class="note">以下のいずれかの要件に該当する場合にのみ、専用システムへの投資が有効となります。</p><div class="cond2"><span>数万件横断</span><span>権限管理</span><span>システム連携</span><span>全社統制</span></div></div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ===== 比較表（詳細版） ===== -->
-        <section class="sec" id="compare">
-          <div class="sec-head reveal">
-            <span class="sec-no">3</span>
-            <div>
-              <h2>3つの汎用ツール ＋ 専用システム｜機能比較表</h2>
-              <p>同じ「技術資料を活用する」という目的でも、組織の規模・予算・技術水準によって最適なツールは異なります。費用や導入是非の全体像は<a href="keiei.html">経営者の方へ</a>でも整理しています。</p>
-            </div>
-          </div>
-          <p class="scroll-help reveal">※表は左右にスクロールできます（安全性・費用の列は右側にあります）</p>
-          <div class="table-scroll reveal">
+        <section class="sec sec--compact" id="tool">
+          <h2 class="m-h2">どのAIを使うか</h2>
+          <p>建設の書類仕事で1つ選ぶなら、私は Claude を勧めます。手帳の走り書きから、日報の文章が作れます（<a href="https://note.com/civilai/n/n944a3b85419a" target="_blank" rel="noopener">AIはどれを選ぶ？</a>）。手元の基準書や仕様書から答えを探すなら、NotebookLM が向いています（<a href="https://note.com/civilai/n/nf162413defa3" target="_blank" rel="noopener">NotebookLMで探す手順</a>）。</p>
+          <details class="m-fold">
+            <summary>ツールと業者の専用システムの比較表を開く（建設コンサル・システム担当の方へ）</summary>
+          <p class="scroll-help">※表は左右にスクロールできます（安全性・費用の列は右側にあります）</p>
+          <div class="table-scroll">
             <table class="compare-table">
               <thead><tr><th>ツール</th><th>主な用途</th><th>導入難易度（開発要不要）</th><th>安全性・出典</th><th>費用（初期／月額）</th><th>このような組織・個人に</th></tr></thead>
               <tbody>
@@ -358,16 +155,16 @@
                   <td><span class="t-name">NotebookLM</span><span class="t-sub">Google</span></td>
                   <td data-label="主な用途">社内資料のQ&amp;A・要約</td>
                   <td data-label="導入のしやすさ"><span class="mark-badge ok">✓ 不要（即日利用）</span></td>
-                  <td data-label="安全性・出典"><span class="mark-badge ok">学習利用なし</span><span class="mark-badge ok">出典あり</span></td>
-                  <td data-label="費用">無料（※本格利用は有料プラン推奨）</td>
-                  <td data-label="向いている人">初導入・即日運用開始に最適</td>
+                  <td data-label="安全性・出典"><span class="mark-badge ok">出典あり</span></td>
+                  <td data-label="費用">無料で試せる（公開されている資料で）。自社の資料は法人向けの契約で</td>
+                  <td data-label="向いている人">公開されている資料で試す。自社の資料は会社が契約した環境で</td>
                 </tr>
                 <tr>
                   <td><span class="t-name">Claudeプロジェクト</span><span class="t-sub">Anthropic／ChatGPTも同様</span></td>
                   <td data-label="主な用途">報告書・技術提案書の作成／推敲</td>
                   <td data-label="導入のしやすさ"><span class="mark-badge ok">✓ 不要（即日利用）</span></td>
-                  <td data-label="安全性・出典"><span class="mark-badge ok">学習利用なし</span><span class="mark-badge tri">出典は用途外</span></td>
-                  <td data-label="費用">月3000円ほど<span class="small">※お試しは無料でも可能</span></td>
+                  <td data-label="安全性・出典"><span class="mark-badge ok">法人契約なら学習利用なし</span><span class="mark-badge tri">出典は用途外</span></td>
+                  <td data-label="費用">1人 月3000円ほど（有料プラン（法人契約））</td>
                   <td data-label="向いている人">文書作成・推敲業務の効率化を重視する技術者</td>
                 </tr>
                 <tr>
@@ -381,7 +178,7 @@
                 <tr class="vendor">
                   <td><span class="t-name">専用システム（業者製）</span><span class="t-sub">建設特化の生成AI 等</span></td>
                   <td data-label="主な用途">大規模・統制が必須な全社構築</td>
-                  <td data-label="導入のしやすさ"><span class="mark-badge ok">✓ 不要（外注納品）</span></td>
+                  <td data-label="導入のしやすさ"><span class="mark-badge tri">外注（数週間〜数か月）</span></td>
                   <td data-label="安全性・出典"><span class="mark-badge ok">契約の範囲内</span><span class="mark-badge tri">出典は製品次第</span></td>
                   <td data-label="費用">数十万〜数百万円<span class="small">＋毎月の利用料</span></td>
                   <td data-label="向いている人">数万件規模の横断検索・権限管理・全社統制が不可欠な企業</td>
@@ -389,20 +186,19 @@
               </tbody>
             </table>
           </div>
-          <p class="prop-next reveal">この表の根拠と限界は→ <a href="#art-pillar">「建設特化AI」は本当に必要？　月3000円で十分なAI活用（記事02）</a></p>
-          <div class="legend reveal"><span>※公開情報を「調べる」Geminiの自動調査（Deep Research）は、会社の技術資料を活用するAIとは別カテゴリのため、この表には含めません。</span><span>※料金・仕様・上限は各社が随時変更します。ご利用・ご契約の前に、公式情報で最新内容をご確認ください。</span></div>
+          <div class="legend"><span>※料金・仕様・上限は各社が随時変更します。ご利用・ご契約の前に、公式情報で最新内容をご確認ください。</span></div>
+          </details>
         </section>
 
         <!-- ===== 稟議Q&A：社内で聞かれたとき用 ===== -->
         <section class="sec" id="ringi">
-          <div class="sec-head reveal">
-            <span class="sec-no">4</span>
+          <div class="sec-head">
             <div>
               <h2>社内で「大丈夫なの？」と聞かれたら</h2>
-              <p>上司や同僚から出やすい3つの心配に、<strong>そのまま使える答え</strong>を用意しました。</p>
+              <p>上司や同僚から出やすい2つの心配に、<strong>そのまま使える答え</strong>を用意しました。</p>
             </div>
           </div>
-          <div class="objections-area reveal">
+          <div class="objections-area">
             <div class="objections-grid">
               <details class="objection-card accordion-item">
                 <summary class="obj-q">
@@ -416,8 +212,8 @@
                 </summary>
                 <div class="obj-a accordion-content">
                   <strong>ルールと設定を整えれば、情報が外に漏れるリスクを低くできます。</strong><br>
-                  NotebookLM・Claudeの「プロジェクト」・GeminiのFile Searchは、<strong>入れたファイルや会話をAIの学習に使わない方針</strong>を各社が公式に明記しています。無料のAIチャットは入力が学習に使われる場合があるので、業務の資料は会社が契約した有料プラン（法人契約）で扱います。そのうえで止めるのは、工事で預かった外部の方の名前と、まだ公表されていない金額だけです。<br>
-                  → <a href="keiei.html#art-rules">どのデータを入れてよいかはこちら（note04）</a>／<a href="#art-privacy">個人で使うときの注意（プライバシー超入門）</a>
+                  無料のAIチャットは、入れた内容が学習に使われる場合があります。業務の資料は、会社が契約した有料プラン（法人契約）で扱います。そのうえで止めるのは、工事で預かった外部の方の名前と、まだ公表されていない金額だけです。<br>
+                  → <a href="keiei.html#art-rules">入れてよいもの・いけないもの</a>／<a href="https://note.com/civilai/n/n33f03f318f5d" target="_blank" rel="noopener">無料で使うAIのプライバシー超入門</a>
                 </div>
               </details>
               <details class="objection-card accordion-item">
@@ -431,98 +227,50 @@
                   </div>
                 </summary>
                 <div class="obj-a accordion-content">
-                  <strong>出典が付くAIを使えば、あてずっぽうの答えはほとんどなくなります。</strong><br>
-                  NotebookLMは「入れた資料だけ」を根拠に答えるので、根拠のない作り話がほとんど出ません。しかも<strong>答えのどこが、どの資料の何ページから来たか</strong>が表示されるので、技術者がその場で元の資料と見比べられます。<br>
-                  → <a href="#art-tashikamekata">確かめるのは3つだけ（note08）</a>
-                </div>
-              </details>
-              <details class="objection-card accordion-item">
-                <summary class="obj-q">
-                  <div class="accordion-header-inner">
-                    <span class="obj-q-text">Q3. 業者に専用システムを作ってもらう場合と比べて、費用や必要なスキルは？</span>
-                    <span class="accordion-btn">
-                      <span class="accordion-btn-text">回答を確認する</span>
-                      <span class="accordion-arrow" aria-hidden="true">▼</span>
-                    </span>
-                  </div>
-                </summary>
-                <div class="obj-a accordion-content">
-                  <strong>初期費用はかからず、むずかしいプログラミングも要りません。</strong><br>
-                  NotebookLMやClaudeは、ブラウザにファイルをドラッグするだけで、その日から使えます。数百万円かけて専用システムを外注する前に、まず自分たちで「どこまでできるか」を試すのが、いちばん損のない進め方です。<br>
-                  → <a href="keiei.html#art-cost">月いくら？の3段階（note16）</a>
+                  <strong>AIは、正解と同じ顔で間違えます。だから、確かめる場所を決めておきます。</strong><br>
+                  全文を読み直す必要はありません。数値・基準名・固有名詞の3か所だけ、元の資料を開いて確かめます。NotebookLMのように出典のページが付くAIなら、どこを開けばよいかがすぐ分かります。<br>
+                  → <a href="https://note.com/civilai/n/nb8b45b7b3496" target="_blank" rel="noopener">AIの答えは、どこまで信じていいか</a>
                 </div>
               </details>
             </div>
           </div>
         </section>
 
-        <!-- ===== 手順の解説記事（実務グループ） ===== -->
         <section class="sec" id="articles">
-          <div class="sec-head reveal">
-            <span class="sec-no">5</span>
-            <div>
-              <h2>日々の実務｜手順の解説記事</h2>
-              <p>上から順に読めば、心構え → 基本の使い方 → 作る・育てる → 応用、と無理なく実務に落とせます。見出しを押すと、その分類の記事一覧が開きます。（順次公開）</p>
-            </div>
+          <h2 class="m-h2">実務向けの記事</h2>
+          <p>記事はnote（ブログのサービス）で公開しています。押すと記事が開きます。</p>
+
+          <p class="art-group">最初に読む</p>
+          <div class="art-grid">
+            <a id="art-tanomikata" class="art" href="https://note.com/civilai/n/n8abf720067d7" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">AIへの頼み方｜答えの質は「最後の一言」で決まる</div><p class="ad">AIの答えの質は頼み方で決まります。覚えるのは「4つの足し算」と、最後の一言だけです。</p></a>
+            <a id="art-tashikamekata" class="art" href="https://note.com/civilai/n/nb8b45b7b3496" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">AIの答えは、どこまで信じていいか｜実在しない出典ページを出された経験から、確かめる3か所</div><p class="ad">AIは正解と同じ顔で間違えます。それでも全文を読み直す必要はありません。目を通すのは、数値・基準名・固有名詞の3か所だけです。</p></a>
+            <a id="art-minutes" class="art" href="https://note.com/civilai/n/n67f9bfb74646" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">打合せメモが5分で議事録に｜AIに任せる手順と、人が直す3点</div><p class="ad">走り書きのメモを、AIで正式な議事録に。30分の清書が5分になります。頼み方と、最後に人が確認する3点まで、実例でご案内します。</p></a>
+            <a id="art-privacy" class="art" href="https://note.com/civilai/n/n33f03f318f5d" target="_blank" rel="noopener"><span class="tagn">セキュリティ</span><div class="at">「この資料、入れて大丈夫？」無料で使うAIのプライバシー超入門</div><p class="ad">無料のAIで試してよい範囲、最低限の設定、うっかり入れてしまったときの3つの手がわかります。業務の資料は、入力を学習に使わない契約のAIで扱います。</p></a>
           </div>
 
-          <details class="art-group-fold reveal" id="ag-overview">
-            <summary class="art-group">まず、全体像と心構えから<span class="fold-count">4本</span></summary>
+          <p class="art-group">工事1件で、AIを育てる</p>
           <div class="art-grid">
-            <div id="art-workflow" class="art pillar reveal is-soon"><span class="tagn">総論</span><div class="at">「うちの業務のどこで使う？」建設コンサルのAI活用マップ｜受注から納品まで</div><p class="ad">受注から納品までの各段階で、どのAIをどう挟むかを一枚に整理。ツール別の手順記事への入口になる「地図」です。</p><span class="soon">（note準備中）</span></div>
-            <a id="art-pillar" class="art pillar reveal" href="https://note.com/civilai/n/nb6ab0269eca1" target="_blank" rel="noopener"><span class="tagn">総論</span><div class="at">「建設特化AI」は本当に必要？月3000円で十分なAI活用｜技術士が解説</div><p class="ad">「御社専用の建設AI」の営業を受けたら、契約の前に読む記事です。月3000円程度で足りるかを先に確かめます。</p></a>
-            <div id="art-8principles" class="art reveal is-soon"><span class="tagn">心構え</span><div class="at">建設コンサルのための生成AI 8ヶ条｜使う前の心構え</div><p class="ad">建設コンサルが生成AIを使う前の心構えを8ヶ条に。第一条は「専門知識こそ、最大のAIスキル」です。</p><span class="soon">（note準備中）</span></div>
-            <a id="art-privacy" class="art reveal" href="https://note.com/civilai/n/n33f03f318f5d" target="_blank" rel="noopener"><span class="tagn">セキュリティ</span><div class="at">「この資料、入れて大丈夫？」無料で使うAIのプライバシー超入門</div><p class="ad">無料のAIで試してよい範囲、最低限の設定、うっかり入れてしまったときの3つの手がわかります。業務の資料は、入力を学習に使わない契約のAIで扱います。</p></a>
+            <a id="art-claude" class="art" href="https://note.com/civilai/n/n58a073b91a18" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">工事が進むほど、AIは現場に詳しくなる｜受注・打合せ・部分完成の書類を添付するだけ</div><p class="ad">いま動いている工事1件の書類を、できた日に1つずつ添付するだけで、日報もKY記録も工程表も写真台帳も、この現場の条件を踏まえた下書きから始められます。実際の画面とコピペで使えるひな形付きで、入力を学習に使わない有料プラン（1人あたり月3000円程度）が前提です。</p></a>
+            <a id="art-master-data" class="art" href="https://note.com/civilai/n/n62de98d5bdc0" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">同じ工事情報を、何度も入力していませんか｜契約書をAIに読ませれば、その後の作業は自動になります</div><p class="ad">契約書類をAIに1回読ませ、工事名・発注者・工期などをCSVファイル1つにまとめれば、以降の書類はそこから埋められます。工期や金額が変わっても、直すのはCSVの1行だけです。</p></a>
+            <a id="art-skill" class="art" href="https://note.com/civilai/n/n70691bac3c3c" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">同じ修正指示を、AIに何度も出していませんか｜1回だけ教えれば、AIがずっと覚えています</div><p class="ad">毎回同じルールで直している確認・修正の指示は、AIに手順として1つ覚えさせておけます。使うたびに気づきを1行足して育て、同じ作業を持つ人にそのまま配れます。</p></a>
           </div>
-          </details>
 
-          <details class="art-group-fold reveal" id="ag-basic">
-            <summary class="art-group">基本の使い方（ノーコード・今日から）<span class="fold-count">6本</span></summary>
+          <p class="art-group">資料から探す・AIを選ぶ</p>
           <div class="art-grid">
-            <a id="art-minutes" class="art reveal" href="https://note.com/civilai/n/n67f9bfb74646" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">打合せメモが5分で議事録に｜AIに任せる手順と、人が直す3点</div><p class="ad">走り書きのメモを、AIで正式な議事録に。30分の清書が5分になります。頼み方と、最後に人が確認する3点まで、実例でご案内します。</p></a>
-            <div id="art-photo" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">工事写真の整理・台帳づくりをAIで｜黒板の読み取りから仕分けまで</div><p class="ad">黒板の文字読み取り・工種別の自動仕分け・EXIF整理まで、AIでできること。提出写真の「加工禁止」の一線と守秘も整理します。</p><span class="soon">（note準備中）</span></div>
-            <div id="art-data-prep" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">AIに読ませる前の、社内資料の整え方｜完璧な整理は要りません</div><p class="ad">準備は「1業務分・10ファイル・最終版だけ」から始められます。集め方・置き方・入れてはいけない4項目の隠し方をご案内します。</p><span class="soon">（note準備中）</span></div>
-            <a id="art-notebooklm" class="art reveal" href="https://note.com/civilai/n/nf162413defa3" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">「あの基準、どの資料に書いてあったか」を、NotebookLMで探す｜手順5ステップ</div><p class="ad">渡した資料だけを覚えた"専属アシスタント"を作る手順です。まず1つ、公開されている共通仕様書から。機密の判断も会社への確認も要りません。</p></a>
-            <a id="art-tanomikata" class="art reveal" href="https://note.com/civilai/n/n8abf720067d7" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">AIへの頼み方｜答えの質は「最後の一言」で決まる</div><p class="ad">AIの答えの質は頼み方で決まります。覚えるのは「4つの足し算」と、最後の一言だけです。</p></a>
-            <a id="art-tashikamekata" class="art reveal" href="https://note.com/civilai/n/nb8b45b7b3496" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">AIの答えは、どこまで信じていいか｜実在しない出典ページを出された経験から、確かめる3か所</div><p class="ad">AIは正解と同じ顔で間違えます。それでも全文を読み直す必要はありません。目を通すのは、数値・基準名・固有名詞の3か所だけです。</p></a>
+            <a id="art-notebooklm" class="art" href="https://note.com/civilai/n/nf162413defa3" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">「あの基準、どの資料に書いてあったか」を、NotebookLMで探す｜手順5ステップ</div><p class="ad">渡した資料だけを覚えた"専属アシスタント"を作る手順です。まず1つ、公開されている共通仕様書から。機密の判断も会社への確認も要りません。</p></a>
+            <a id="art-choice" class="art" href="https://note.com/civilai/n/n944a3b85419a" target="_blank" rel="noopener"><span class="tagn">総論</span><div class="at">AIはどれを選ぶ？建設関連はClaude一択｜3年使ってわかった理由と使い分け</div><p class="ad">建設の書類仕事で1つ選ぶならClaude。手帳の走り書きから日報の文章ができ、数百万円の見積もりを保留しているなら契約する前に読む記事です。</p></a>
+            <a id="art-pillar" class="art pillar" href="https://note.com/civilai/n/nb6ab0269eca1" target="_blank" rel="noopener"><span class="tagn">総論</span><div class="at">「建設特化AI」は本当に必要？月3000円で十分なAI活用｜技術士が解説</div><p class="ad">「御社専用の建設AI」の営業を受けたら、契約の前に読む記事です。月3000円程度で足りるかを先に確かめます。</p></a>
           </div>
-          </details>
 
-          <details class="art-group-fold reveal" id="ag-build">
-            <summary class="art-group">作る・育てる<span class="fold-count">4本</span></summary>
+          <p class="art-group">立場から</p>
           <div class="art-grid">
-            <a id="art-claude" class="art reveal" href="https://note.com/civilai/n/n58a073b91a18" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">工事が進むほど、AIは現場に詳しくなる｜受注・打合せ・部分完成の書類を添付するだけ</div><p class="ad">いま動いている工事1件の書類を、できた日に1つずつ添付するだけで、日報もKY記録も工程表も写真台帳も、この現場の条件を踏まえた下書きから始められます。実際の画面とコピペで使えるひな形付きで、入力を学習に使わない有料プラン（1人あたり月3000円程度）が前提です。</p></a>
-            <a id="art-master-data" class="art reveal" href="https://note.com/civilai/n/n62de98d5bdc0" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">同じ工事情報を、何度も入力していませんか｜契約書をAIに読ませれば、その後の作業は自動になります</div><p class="ad">契約書類をAIに1回読ませ、工事名・発注者・工期などをCSVファイル1つにまとめれば、以降の書類はそこから埋められます。工期や金額が変わっても、直すのはCSVの1行だけです。</p></a>
-            <a id="art-skill" class="art reveal" href="https://note.com/civilai/n/n70691bac3c3c" target="_blank" rel="noopener"><span class="tagn">手順</span><div class="at">同じ修正指示を、AIに何度も出していませんか｜1回だけ教えれば、AIがずっと覚えています</div><p class="ad">毎回同じルールで直している確認・修正の指示は、AIに手順として1つ覚えさせておけます。使うたびに気づきを1行足して育て、同じ作業を持つ人にそのまま配れます。</p></a>
-            <div id="art-digitaltwin" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">AIを"業務の専門家"に育てる｜作った資料を、すぐ戻すだけ</div><p class="ad">作った資料をAIに戻すだけで、一般論しか言わないAIが「業務の専門家」に育ちます。育て方はひとつ。</p><span class="soon">（note準備中）</span></div>
+            <a id="art-young" class="art" href="https://note.com/civilai/n/n24352bf740c8" target="_blank" rel="noopener"><span class="tagn">心構え</span><div class="at">若手技術者へ｜経験が浅い今こそ、AIで伸びる。5年後に差がつく1つの力</div><p class="ad">わからないことをその場で聞き、答えを基準書と照合する。会計検査院などの公開されたミス事例で、先輩の失敗を先に知る方法と、5年で差がつく理由を書きました。</p></a>
           </div>
-          </details>
 
-          <details class="art-group-fold reveal" id="ag-advanced">
-            <summary class="art-group">実演・応用（少し上級）<span class="fold-count">3本</span></summary>
-          <div class="art-grid">
-            <div id="art-quantity" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">数量計算書の照査、AIはここまで手伝える｜5つのSTEP</div><p class="ad">数量計算書の照査をAIに手伝わせる5つのSTEP。最初の失敗談から「できないこと」まで正直に。</p><span class="soon">（note準備中）</span></div>
-            <div id="art-deep" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">Gemini Deep Researchで技術調査を時短｜建設の調べもの自動化</div><p class="ad">技術動向・他事例の調べものを、出典付きレポートで自動化する手順です。半日仕事が席を立つ間に。</p><span class="soon">（note準備中）</span></div>
-            <div id="art-filesearch" class="art reveal is-soon"><span class="tagn">手順</span><div class="at">Gemini File Searchで自社資料AIを自前に｜建設（少し技術者向け）</div><p class="ad">数百万円で売られることもある"社内資料検索AI"の中身を、自前に組む方法。費用は使った分だけの従量課金です。少しだけ技術者向けです。</p><span class="soon">（note準備中）</span></div>
-          </div>
-          </details>
-
-          <details class="art-group-fold reveal" id="ag-first">
-            <summary class="art-group">初めての一歩<span class="fold-count">3本</span></summary>
-          <div class="art-grid">
-            <a id="art-choice" class="art reveal" href="https://note.com/civilai/n/n944a3b85419a" target="_blank" rel="noopener"><span class="tagn">総論</span><div class="at">AIはどれを選ぶ？建設関連はClaude一択｜3年使ってわかった理由と使い分け</div><p class="ad">建設の書類仕事で1つ選ぶならClaude。手帳の走り書きから日報の文章ができ、数百万円の見積もりを保留しているなら契約する前に読む記事です。</p></a>
-            <div id="art-veterans" class="art reveal is-soon"><span class="tagn">心構え</span><div class="at">「自分には関係ない」建設のベテランが生成AIで強くなる方法</div><p class="ad">「AIは自分には関係ない」と感じているベテランの方へ。あなたの経験こそ、AI時代の武器になります。</p><span class="soon">（note準備中）</span></div>
-            <a id="art-young" class="art reveal" href="https://note.com/civilai/n/n24352bf740c8" target="_blank" rel="noopener"><span class="tagn">心構え</span><div class="at">若手技術者へ｜経験が浅い今こそ、AIで伸びる。5年後に差がつく1つの力</div><p class="ad">わからないことをその場で聞き、答えを基準書と照合する。会計検査院などの公開されたミス事例で、先輩の失敗を先に知る方法と、5年で差がつく理由を書きました。</p></a>
-          </div>
-          </details>
-          <a href="hajimete.html" class="art art-door reveal">
-            <span class="tagn">入門</span>
-            <div class="at">AIは初めて、で大丈夫。</div>
-          <p class="prop-more reveal">手順とツールの比較を、公開順にまとめています。<a href="https://note.com/civilai/m/md8b4995799b6" target="_blank" rel="noopener">noteのマガジン「実務で使う（手順・比較）」を見る</a></p>
-            <p class="ad">「変なことを入力したら、大変なことになるんじゃないか」——その不安に最初にお答えする入門ページです。AIチャットで間違えても、まず壊れることはありません。入れ方から、順にご案内します。</p>
-            <span class="art-door-go">入門ページを開く →</span>
-          </a>
+          <p class="m-soon">これから出す記事：工事写真の整理・台帳づくり／数量計算書の照査／ベテラン向け／建設コンサルのAI活用マップ ほか</p>
+          <p class="prop-more">公開順に読むなら、<a href="https://note.com/civilai/m/md8b4995799b6" target="_blank" rel="noopener">noteのマガジン「実務で使う（手順・比較）」</a>へ。AIが初めてなら、<a href="hajimete.html">入門ページ「AI、はじめの一歩」</a>から。</p>
         </section>
+
 
       </div><!-- /.doc-main -->
 
@@ -531,7 +279,7 @@
         <div class="side-card side-profile">
           <img src="images/avatar_engineer.png" alt="civilAI（技術士）" width="1024" height="1024" loading="lazy" class="sp-avatar">
           <p class="sp-name">civilAI（技術士）</p>
-          <p class="sp-bio">建設コンサルタント30年以上の現役技術士（建設部門）。国土交通省 地方整備局長表彰・学会論文発表あり。生成AI活用の仕組みを自作した実務者。</p>
+          <p class="sp-bio">建設現場管理3年以上・建設コンサルタント業界30年以上。1級土木施工管理技士・技術士（建設部門）。国土交通省 地方整備局長表彰ほか。生成AI活用の仕組みを自作した実務者。</p>
           <a href="index.html#about" class="sp-link">プロフィールの詳細 →</a>
         </div>
         <div class="side-card side-nav">
@@ -551,19 +299,11 @@
         <div class="side-card side-toc">
           <p class="side-title">このページの内容</p>
           <ul>
-            <li><a href="#try" class="toc-link">まず1つ、5分でやってみる</a></li>
-            <li><a href="#gyakubiki" class="toc-link">この仕事、AIでできる？</a></li>
-            <li><a href="#flow" class="toc-link">30秒で選ぶ・ツール選び</a></li>
-            <li><a href="#compare" class="toc-link">機能比較表</a></li>
+            <li><a href="#try" class="toc-link">5分でやってみる</a></li>
+            <li><a href="#shigoto" class="toc-link">あなたの仕事から選ぶ</a></li>
+            <li><a href="#tool" class="toc-link">どのAIを使うか</a></li>
             <li><a href="#ringi" class="toc-link">社内で聞かれたら</a></li>
-            <li>
-              <a href="#articles" class="toc-link">手順の解説記事</a>
-              <ul class="toc-sub">
-                <li><a href="#ag-overview" class="toc-link">全体像と心構え</a></li>
-                <li><a href="#ag-basic" class="toc-link">基本の使い方</a></li>
-                <li><a href="#ag-build" class="toc-link">作る・育てる</a></li>
-                <li><a href="#ag-advanced" class="toc-link">実演・応用</a></li>
-                <li><a href="#ag-first" class="toc-link">初めての一歩</a></li>
+            <li><a href="#articles" class="toc-link">実務向けの記事</a></li>
               </ul>
             </li>
           </ul>

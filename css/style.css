@@ -3362,3 +3362,10 @@ details[open] .michisuji-arrow { transform: rotate(180deg); }
 .m-steps h3{font-size:18px;line-height:1.6}
 .m-steps .m-day{font-size:13.5px;font-weight:700;color:var(--free);margin:0}
 @media (max-width:600px){.m-doors{grid-template-columns:1fr;gap:8px}.m-door{padding:10px 14px}.m-door strong{font-size:16px;margin-bottom:2px}.m-door span{font-size:13.5px}.m-sub{font-size:15.5px;line-height:1.7;margin-bottom:8px}.m-hero h1{margin-bottom:8px}.m-proof{font-size:15px;margin-bottom:6px}#doors{padding-top:4px}#doors .m-h2{margin-bottom:8px}.m-quiz select{min-width:0;width:100%}.m-quiz label{width:100%}}
+
+/* 経営者向け・実務向け（2026-09-26 刷新） */
+.m-note{font-size:15px;line-height:1.75;margin:0;padding:10px 14px;border-left:3px solid var(--free);background:var(--free-bg);border-radius:6px}
+.m-soon{font-size:14.5px;color:var(--muted);margin:14px 0 6px}
+.m-fold{margin-top:12px;border:1px solid var(--line-strong);border-radius:10px;padding:10px 14px;background:var(--paper-2)}
+.m-fold summary{cursor:pointer;font-weight:700}
+.m-steps{margin-bottom:20px}
