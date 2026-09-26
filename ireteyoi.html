@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIに入れてよいもの・いけないもの｜早見表と社内ルール2行｜civilAI（技術士）</title>
+<meta name="description" content="建設会社・建設コンサル向け。会社が契約したAIなら施工計画書も議事録もそのまま。止めるのは外部の方の名前と未公表の金額の2つ。早見表と、そのまま回覧できる社内ルール2行。">
+<meta property="og:title" content="AIに入れてよいもの・いけないもの｜早見表と社内ルール2行｜civilAI（技術士）">
+<meta property="og:description" content="建設会社・建設コンサル向け。会社が契約したAIなら施工計画書も議事録もそのまま。止めるのは外部の方の名前と未公表の金額の2つ。早見表と、そのまま回覧できる社内ルール2行。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AIに入れてよいもの・いけないもの｜早見表と社内ルール2行｜civilAI（技術士）">
+<meta name="twitter:description" content="建設会社・建設コンサル向け。会社が契約したAIなら施工計画書も議事録もそのまま。止めるのは外部の方の名前と未公表の金額の2つ。早見表と、そのまま回覧できる社内ルール2行。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- OGP画像・favicon・canonical・構造化データ（公開URL確定済み。変更時は tools/set_site_url.py を再実行） -->
+<meta property="og:url" content="https://civil-ai-study.github.io/civilai-site/ireteyoi.html">
+<meta property="og:image" content="https://civil-ai-study.github.io/civilai-site/images/hero_illustration.png">
+<meta name="twitter:image" content="https://civil-ai-study.github.io/civilai-site/images/hero_illustration.png">
+<link rel="canonical" href="https://civil-ai-study.github.io/civilai-site/ireteyoi.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="images/avatar_engineer.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "AIに入れてよいもの・いけないもの｜早見表と社内ルール2行",
+  "url": "https://civil-ai-study.github.io/civilai-site/ireteyoi.html",
+  "inLanguage": "ja",
+  "description": "建設会社・建設コンサル向け。会社が契約したAIなら施工計画書も議事録もそのまま。止めるのは外部の方の名前と未公表の金額の2つ。早見表と、そのまま回覧できる社内ルール2行。",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "civilAI（技術士）",
+    "url": "https://civil-ai-study.github.io/civilai-site/"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://civil-ai-study.github.io/civilai-site/"},
+      {"@type": "ListItem", "position": 2, "name": "入れてよいもの・いけないもの", "item": "https://civil-ai-study.github.io/civilai-site/ireteyoi.html"}
+    ]
+  },
+  "author": {
+    "@type": "Person",
+    "name": "civilAI（技術士）",
+    "jobTitle": "技術士（建設部門）",
+    "knowsAbout": ["建設コンサルタント", "建設DX", "生成AI活用", "土木"],
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "技術士（建設部門）"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "コンクリート診断士"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "1級土木施工管理技士"}
+    ],
+    "award": "国土交通省 地方整備局長表彰",
+    "sameAs": ["https://note.com/civilai", "https://x.com/civilai_gishi"]
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- ===== ナビ（3ドア構造・全ページ共通） ===== -->
+<div class="top-bar"><div class="wrap"><span>建設会社・建設コンサルの方へ｜現役の技術士（建設部門）が、AIの始め方と費用の目安をまとめています</span></div></div>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a href="index.html#top" class="brand">
+      <img src="images/avatar_engineer.png" alt="civilAI（技術士）" width="1024" height="1024" class="brand-avatar">
+      <span class="brand-name">civilAI<span class="brand-cred">（技術士）</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="keiei.html" class="hideS">経営者の方へ</a>
+      <a href="genba.html" class="hideS">実務で使う</a>
+      <a href="hajimete.html" class="hideS">AI、はじめの一歩</a>
+      <a href="shiryo.html" class="hideS">資料</a>
+      <a href="index.html#contact" class="nav-cta">お問い合わせ</a>
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="navMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-menu" id="navMenu">
+    <a href="keiei.html">経営者の方へ</a>
+    <a href="genba.html">実務で使う</a>
+    <a href="hajimete.html">AI、はじめの一歩</a>
+    <a href="shiryo.html">資料</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </div>
+</nav>
+
+<div id="top"></div>
+
+<!-- ===== 本体 ===== -->
+<div class="sec sec--doc">
+  <div class="wrap">
+    <div class="doc-layout">
+
+      <div class="doc-main">
+
+        <!-- 持ち帰れる1枚もの①：入れてよいもの・いけないもの（正は note04） -->
+        <header class="m-hero">
+          <h1>AIに入れてよいもの・<span class="em">いけないもの</span></h1>
+          <p class="m-sub">会社が契約したAIなら、施工計画書も議事録も、社員の名前が入ったままで構いません。入れた内容をAIの学習に使わない契約になっているからです。止めるのは2つだけです。この1枚を印刷して、社内の打合せに使ってください。</p>
+          <p class="m-note">会社でまだAIを契約していなければ、1人分から試せます（最低の人数は製品ごとに違うので、見積もりでご確認ください）。<a href="keiei.html">経営者向けのページ</a>に、始める順番をまとめています。</p>
+        </header>
+
+        <section class="sec sec--compact" id="stop2">
+          <h2 class="m-h2">どのAIにも入れない、2つ</h2>
+          <ol class="m-steps">
+            <li>
+              <h3>その工事で預かった、外部の方の名前</h3>
+              <p>近隣の方（家屋調査・苦情の記録）、工事写真に写り込んだ通行人の顔や表札、用地の地権者・補償の対象者。入れるときは「Aさん」「対象地」に置き換えてからにします。</p>
+            </li>
+            <li>
+              <h3>まだ公表されていない金額</h3>
+              <p>予定価格、応札前の見積、協議中の設計変更額。工事看板や入札結果で公表された工事名・場所・発注者名・契約金額は、もう秘密ではありません。</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="sec" id="hyou">
+          <h2 class="m-h2">早見表｜どのAIに、どの資料を入れてよいか</h2>
+          <p>分かれ目は「有料か無料か」ではなく、<strong>会社が法人として契約したAIか、無料・個人契約のAIか</strong>です。個人向けは、有料プランでも入力が学習に使われることがあります。</p>
+          <div class="table-scroll">
+            <table class="m-matrix">
+              <thead><tr><th>資料</th><th>無料・個人契約のAI</th><th>会社が契約したAI<br><span class="small">有料プラン（法人契約）</span></th></tr></thead>
+              <tbody>
+                <tr><td>公開されている基準・仕様書の調べもの、一般的な調べもの</td><td>○</td><td>○</td></tr>
+                <tr><td>施工計画書・議事録・日報・数量計算</td><td>×</td><td>○</td></tr>
+                <tr><td>公表済みの工事名・工事場所・発注者名・契約金額が載った書類</td><td>×</td><td>○</td></tr>
+                <tr><td>自社・協力会社の社員の名前（作業員名簿・KY記録・打合せ簿）</td><td>×</td><td>○</td></tr>
+                <tr><td>近隣の方・地権者・補償の対象者の名前</td><td>×</td><td>「Aさん」に置き換えてから</td></tr>
+                <tr><td>工事写真（顔・車両番号・表札が写り込んだもの）</td><td>×</td><td>あと回し（書類から始める）</td></tr>
+                <tr><td>まだ公表されていない金額（予定価格・応札前の見積・協議中の設計変更額）</td><td>×</td><td>×</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="m-soon">○＝そのまま入れてよい　×＝入れない。工事写真は、写り込みを消せば入れられますが、まずは書類から始めます。※契約の内容は製品とプランで違います。最新は各サービスの公式サイトでご確認ください。</p>
+        </section>
+
+        <section class="sec sec--compact" id="rule">
+          <h2 class="m-h2">社内ルールは、この2行で足ります</h2>
+          <p>そのまま回覧に使えます。</p>
+          <div class="copy-card">
+            <p><span class="copy-text">1. 自社の書類は、会社が契約したAIだけで扱う。無料・個人契約のAIには、自社の書類を入れない。
+2. その工事で預かった第三者の名前と、まだ公表されていない金額は、どのAIにも入れない。</span></p>
+            <button type="button" class="btn btn-primary btn-sm copy-btn">この2行をコピー</button>
+          </div>
+          <p>公開されている基準・仕様書の調べものや、一般的な調べものは、この2行の外です。月に一度、判断に迷った1件を持ち寄る場を作っておくと、ルールが現場に合っていきます。</p>
+        </section>
+
+        <section class="sec sec--compact" id="okikae">
+          <h2 class="m-h2">名前の置き換え方</h2>
+          <ul class="m-list">
+            <li>氏名は「Aさん」、場所は「対象地」。書類を開いたら、出ている箇所を<strong>全部</strong>直します（用地の調書を直しても、次のページの立会記録に本名が残っていれば意味がありません）。</li>
+            <li><strong>置き換えそのものを、AIにやらせません。</strong>頼むには、先に生のままを渡すことになるからです。ExcelやWordの置換機能で済ませます。</li>
+            <li>誰が「Aさん」かを書いたメモは、AIに入れず手元に置きます。</li>
+            <li>氏名を消しても、無料・個人契約のAIに入れてよいことにはなりません（住所や所属が残れば、誰か分かるため）。</li>
+          </ul>
+        </section>
+
+        <section class="sec sec--compact" id="konkyo">
+          <h2 class="m-h2">なぜ、こう分かれるのか</h2>
+          <p><strong>法律だけで言えば、</strong>入力を学習に使わない・中身を取り扱わないと契約で定めたAIなら、個人情報を入れても外部へ渡したことにはなりません（個人情報保護委員会の整理）。社員か社外かの区別もありません。</p>
+          <p><strong>それでも外部の方の名前を入れないのは、発注者との契約があるからです。</strong>公共工事では、借りた資料を第三者に渡さない定めが置かれます。法律が許していても、契約のほうが厳しければ、厳しいほうに従います。定めの有無は案件ごとに違うので、定めがある前提で扱います。</p>
+          <p class="m-links">一次情報：<a href="https://www.ppc.go.jp/all_faq_index/faq1-q7-53/" target="_blank" rel="noopener">個人情報保護委員会 ガイドラインQ&amp;A 7-53</a>／<a href="https://www.ppc.go.jp/news/careful_information/230602_AI_utilize_alert/" target="_blank" rel="noopener">生成AIサービスの利用に関する注意喚起（2023年6月2日）</a>（2026年9月12日確認）。時系列は<a href="shiryo.html">資料ページ</a>にまとめています。</p>
+        </section>
+
+        <section class="sec sec--compact" id="tsuzuki">
+          <h2 class="m-h2">続きを読む</h2>
+          <ul class="m-top3">
+            <li><a href="https://note.com/civilai/n/n26145d326804" target="_blank" rel="noopener">「この施工計画書、AIに入れて大丈夫？」｜会社が契約したAIなら、そのまま入ります</a></li>
+            <li><a href="https://note.com/civilai/n/n33f03f318f5d" target="_blank" rel="noopener">「この資料、入れて大丈夫？」無料で使うAIのプライバシー超入門</a></li>
+            <li><a href="https://note.com/civilai/n/nb8b45b7b3496" target="_blank" rel="noopener">AIの答えは、どこまで信じていいか｜実在しない出典ページを出された経験から、確かめる3か所</a></li>
+          </ul>
+          <p class="m-soon">AIが出した基準値・数量・法令は、元の資料で出典を確かめてから使ってください。</p>
+        </section>
+
+
+      </div>
+
+      <aside class="sidebar" aria-label="補助情報">
+        <div class="side-card side-profile">
+          <img src="images/avatar_engineer.png" alt="civilAI（技術士）" width="1024" height="1024" loading="lazy" class="sp-avatar">
+          <p class="sp-name">civilAI（技術士）</p>
+          <p class="sp-bio">建設現場管理3年以上・建設コンサルタント業界30年以上。1級土木施工管理技士・技術士（建設部門）。国土交通省 地方整備局長表彰ほか。生成AI活用の仕組みを自作した実務者。</p>
+          <a href="index.html#about" class="sp-link">プロフィールの詳細 →</a>
+        </div>
+        <div class="side-card side-toc">
+          <p class="side-title">このページの内容</p>
+          <ul>
+            <li><a href="#stop2" class="toc-link">どのAIにも入れない2つ</a></li>
+            <li><a href="#hyou" class="toc-link">早見表</a></li>
+            <li><a href="#rule" class="toc-link">社内ルール2行</a></li>
+            <li><a href="#okikae" class="toc-link">名前の置き換え方</a></li>
+            <li><a href="#konkyo" class="toc-link">なぜ、こう分かれるのか</a></li>
+            <li><a href="#tsuzuki" class="toc-link">続きを読む</a></li>
+          </ul>
+        </div>
+        <div class="side-card side-nav">
+          <p class="side-title">ほかのページ</p>
+          <p><a href="keiei.html">経営者の方へ</a>／<a href="genba.html">実務で使う</a></p>
+          <p>この早見表の元になった記事：</p>
+          <ul>
+            <li><a href="keiei.html#art-rules">「この施工計画書、AIに入れて大丈夫？」</a></li>
+          </ul>
+        </div>
+        <div class="side-card side-cta">
+          <p class="side-title">ご質問・ご相談</p>
+          <p>記事へのご質問、執筆・研修等のご相談はこちら。</p>
+          <a href="index.html#contact" class="btn btn-primary btn-sm">お問い合わせ</a>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</div>
+
+<!-- ===== フッター ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="pledge">建設業務のAI導入は、無理なく小さく始められます。</span>
+        現役の建設部門技術士が運営しています。
+      </div>
+      <div class="foot-social" aria-label="SNS">
+        <span class="foot-social-label">フォロー：</span>
+        <a class="foot-social-link" href="https://note.com/civilai" target="_blank" rel="noopener" title="note" aria-label="noteをフォロー">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+            <path d="M12 20h9M3 20v-8a2 2 0 0 1 2-2h4l2 3h4a2 2 0 0 1 2 2v5"/>
+          </svg>
+        </a>
+        <a class="foot-social-link" href="https://x.com/civilai_gishi" target="_blank" rel="noopener" title="X" aria-label="Xをフォロー">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false">
+            <line x1="5" y1="5" x2="19" y2="19"/>
+            <line x1="19" y1="5" x2="5" y2="19"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      ※本サイトの情報は作成時点のものです。料金・仕様・上限は各社が随時変更します。ご利用・ご契約の前に、公式情報で最新内容をご確認ください。<br>
+      © civilAI（技術士）
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

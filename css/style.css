@@ -3369,3 +3369,13 @@ details[open] .michisuji-arrow { transform: rotate(180deg); }
 .m-fold{margin-top:12px;border:1px solid var(--line-strong);border-radius:10px;padding:10px 14px;background:var(--paper-2)}
 .m-fold summary{cursor:pointer;font-weight:700}
 .m-steps{margin-bottom:20px}
+
+/* 1枚もの「入れてよいもの・いけないもの」（2026-09-26） */
+.m-matrix{width:100%;border-collapse:collapse;font-size:15px}
+.m-matrix th,.m-matrix td{border:1px solid var(--line-strong);padding:8px 10px;vertical-align:top;line-height:1.6}
+.m-matrix thead th{background:var(--paper-2);color:var(--ink);font-weight:700}
+.m-matrix td:nth-child(n+2){text-align:center;font-weight:700;min-width:7em}
+.m-list{margin:0;padding-left:1.2em;line-height:1.8}
+.m-list li{margin-bottom:6px}
+#rule .copy-text{white-space:pre-line}
+@media print{.nav,.top-bar,.sidebar,.foot,.copy-btn{display:none!important}.doc-layout{display:block}}
