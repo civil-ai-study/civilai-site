@@ -3378,4 +3378,6 @@ details[open] .michisuji-arrow { transform: rotate(180deg); }
 .m-list{margin:0;padding-left:1.2em;line-height:1.8}
 .m-list li{margin-bottom:6px}
 #rule .copy-text{white-space:pre-line}
+#tanomi .copy-text{white-space:pre-line}
+.m-h3{font-family:"Shippori Mincho",serif;font-size:18px;margin:28px 0 10px}
 @media print{.nav,.top-bar,.sidebar,.foot,.copy-btn{display:none!important}.doc-layout{display:block}}
