@@ -3381,3 +3381,7 @@ details[open] .michisuji-arrow { transform: rotate(180deg); }
 #tanomi .copy-text{white-space:pre-line}
 .m-h3{font-family:"Shippori Mincho",serif;font-size:18px;margin:28px 0 10px}
 @media print{.nav,.top-bar,.sidebar,.foot,.copy-btn{display:none!important}.doc-layout{display:block}}
+/* トップ画像（2026-10-22 オーナー指示）：見出しの上に、夕焼けの橋の建設現場の帯を置く（文字は重ねない＝コントラストの問題が出ない）。
+   画像は images/hero_bridge.jpg（Gemini で生成。文字・人物・黄色なし）。<img> で参照する（build_site.py は HTML が参照する画像だけを公開側へ出すため、CSSの背景指定にしない） */
+.m-hero-band{display:block;width:100%;height:clamp(120px,26vw,230px);margin:0 0 18px;border-radius:14px;object-fit:cover;object-position:68% 22%}
+@media (max-width:700px){.m-hero-band{height:132px;border-radius:12px;margin-bottom:12px;object-position:72% 20%}}
